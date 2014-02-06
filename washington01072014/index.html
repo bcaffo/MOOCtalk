@@ -8,26 +8,20 @@
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/prettify.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
-<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
-<link rel=stylesheet href="./assets/css/custom.css"></link>
-<link rel=stylesheet href="./assets/css/custom.css.BACKUP.546.css"></link>
-<link rel=stylesheet href="./assets/css/custom.css.BASE.546.css"></link>
-<link rel=stylesheet href="./assets/css/custom.css.LOCAL.546.css"></link>
-<link rel=stylesheet href="./assets/css/custom.css.REMOTE.546.css"></link>
-<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/prettify.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="../libraries/widgets/bootstrap/css/bootstrap.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
-  <script data-main="libraries/frameworks/io2012/js/slides" 
-    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
   
@@ -39,7 +33,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <aside class="gdbar">
-    <img src="assets/img/bloomberg_shield.png">
+    <img src="../assets/img/bloomberg_shield.png">
   </aside>
   <hgroup class="auto-fadein">
     <h1>Teaching statistics for the future</h1>
@@ -47,16 +41,31 @@
     <p>Brian Caffo<br/>Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health</p>
   </hgroup>
   <article></article>  
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
 </slide>
     
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h1>SMART (<a href="http://www.smart-stats.org">www.smart-stats.org</a>)</h1>
+    <h2>Teaching statistics for the future</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="fig/smart.png" alt="www.smart-stats.org"></p>
+    <h3>Outline of the talk</h3>
+
+<ol>
+<li>Who the heck am I?</li>
+<li>A brief taxonomy and history of online educational models</li>
+<li>Novel moving target directions of the field statistics</li>
+<li>Massive Open Online Courses (MOOCs) </li>
+<li>JHU Biostat involvement in Coursera</li>
+<li><strong>Data Science series</strong> (bulk of the talk)</li>
+<li>SWIRL</li>
+</ol>
 
   </article>
   <!-- Presenter Notes -->
@@ -64,29 +73,344 @@
 
 <slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Statistics With Interactive R Learning</h2>
+    <h2>About these slides</h2>
   </hgroup>
   <article data-timings="">
-    <h3><a href="http://swirlstats.com">http://swirlstats.com</a></h3>
-
-<p><center><img src = "fig/swirl.png" width = 500 border = "0"></center></p>
+    <ul>
+<li>HTML5 using (customized) <a href="https://code.google.com/p/io-2012-slides/">Google io2012 style</a></li>
+<li>Created using <a href="http://slidify.org">slidify</a></li>
+<li>Appear on github at ?????, fork if you&#39;d like</li>
+<li>Jointly written with my collaborators Jeff Leek and Roger Peng</li>
+<li>CC licensed by-nc-sa</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Core team</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src="../fig/brianCaffo.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/jeffLeek.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/rogerPeng.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+<div align="center">
+<img src="../fig/nickyC.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/seanKross.png" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Plus generous contributions from the</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><a href="http://www.biostat.jhsph.edu">Department of Biostatistics</a></li>
+<li><a href="http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/">Center for Teaching and Learning</a></li>
+<li><a href="http://www.jhsph.edu">Bloomberg School of Public Health</a></li>
+<li><a href="http://www.jhu.edu">Johns Hopkins University</a></li>
+<li><a href="http://coursera.org">Coursera</a></li>
+<li>Team SWIRL</li>
+<li>Lauren and Ethan (Brian&#39;s 2013 interns)</li>
+<li>Contributions from github pull requests</li>
+<li>Tolerant families!</li>
+<li>A half of a million intrepid self learners</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>My day job(s)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>SMART (<a href="http://www.smart-stats.org">www.smart-stats.org</a>)</h3>
+
+<div align="center">
+<img src="../fig/smart.png" alt="Drawing" style="width: 700px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Connectomics</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>resting state fMRI</h3>
+
+<div align="center"><img src="../fig/defaultMode1.png" alt="Drawing" style="width: 600px;"/></div>
+
+<p><br></p>
+
+<div align="center">
+<img src="../fig/defaultMode2.png" alt="Drawing" style="width: 600px;"/></div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>JHU Biostat Onsite Degree Programs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="../fig/header-prospective-students.jpg" alt="Drawing" style="width: 250px;"/></p>
+
+<ol>
+<li>PhD program 
+
+<ul>
+<li>Around 50 students with around 10 matriculating per year.</li>
+<li>Around 200 applications per year.</li>
+</ul></li>
+<li>ScM program
+
+<ul>
+<li>Around 25 students with around 10 matriculating per year.</li>
+<li>Around 50 applications per year. </li>
+</ul></li>
+<li>Concurrent MHS program
+
+<ul>
+<li>Typically around 10 students with around 2 matriculating per year.</li>
+<li>2 - 4 applications per year </li>
+</ul></li>
+<li>Standalone MHS program</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>My person teaching</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Biostat 751 and 2 
+
+<ul>
+<li>16 weeks (8 x 2) of classes</li>
+<li>Two 80 minute lectures per week</li>
+<li>Two tests per term</li>
+<li>Four homeworks per term</li>
+<li>One TA</li>
+</ul></li>
+<li>About 10 students</li>
+<li>Covers intro methods and  (mostly) linear models at the doctoral level</li>
+<li>Recently I&#39;ve introduced the flipped classroom model</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>(Incomplete) characteristics of educational systems</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Online / in person / blended</li>
+<li>Active/participatory/interactive learning</li>
+<li>Scalable / non-scalable</li>
+<li>Low cost / high cost / freemium</li>
+<li>Student paced / teacher paced</li>
+<li>Open / restricted access</li>
+<li>Flipped / lecture style / blended </li>
+<li>Open / closed source content</li>
+<li>Instructor interaction</li>
+<li>Credentialing </li>
+<li>Funding model</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Examples</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing</li>
+<li>&quot;Tranditional&quot; online courses are online or blended online and in person and otherwise try to approximate tranditional in person classes. </li>
+<li>Online interactive learning (OIL Code School, Code academy) pimary characteristics are student-paced interactive learning</li>
+<li>Intelligent tutoring systems (SWIRL), like OILs just not online</li>
+<li>Khan Academy is online, interactive, scalable and low cost</li>
+<li>Other modalities : iTunes U, OpenCourseware, Udemy</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>MOOCs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Primary characteristics are open access, low cost, scalable, online </p>
+
+<h3>(every letter is negotiable, from Wikipedia citing Mathieu Plorde)</h3>
+
+<div align="center">
+<a href=http://www.flickr.com/photos/23311795@N04/8620174342>
+<img src="../fig/MOOC_poster_mathplourde.jpg" alt="Drawing" style="width: 600px;"/>
+</a>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Most visible MOOC instruction sites</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href=https://www.edx.org/>
+<img src="../fig/edX.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udacity.com/>
+<img src="../fig/udacity.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udemy.com/>
+<img src="../fig/udemy.jpeg" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://corsera.rog/>
+<img src="../fig/coursera.png" alt="Drawing" style="height: 300;"/>
+</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Also</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Several university/organization-specific sites</h3>
+
+<ul>
+<li>Stanford, CMU, Duke, Harvard, MIT, google ...</li>
+<li>Varying degrees of content/delivery </li>
+<li>EdX platform has been open sourced</li>
+<li>Google course builder (now contributing to EdX)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, videos</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, quizzes</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformQuizzes.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, peer grading</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, forums</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, forums</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformForums2.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Statistics With Interactive R Learning</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3><a href="http://swirlstats.com">http://swirlstats.com</a></h3>
+
+<div align="center">
+<img src = "../fig/swirl.png" width = 500 border = "0">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
   <article data-timings="">
     
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-21" style="background:;">
   <article data-timings="">
-    <pre><code class="r">test
-</code></pre>
-
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -97,26 +421,128 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='SMART (<a href="http://www.smart-stats.org">www.smart-stats.org</a>)'>
+        data-slide=1 title='Teaching statistics for the future'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Statistics With Interactive R Learning'>
+        data-slide=2 title='About these slides'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title=''>
+        data-slide=3 title='Core team'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title=''>
+        data-slide=4 title='Plus generous contributions from the'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='My day job(s)'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Connectomics'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='JHU Biostat Onsite Degree Programs'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='My person teaching'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='(Incomplete) characteristics of educational systems'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Examples'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='MOOCs'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Most visible MOOC instruction sites'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Also'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Coursera platform, videos'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Coursera platform, quizzes'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Coursera platform, peer grading'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Coursera platform, forums'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Coursera platform, forums'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Statistics With Interactive R Learning'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title=''>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title=''>
+         21
       </a>
     </li>
   </ul>
@@ -128,11 +554,12 @@
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
-  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
-<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
-<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+  <script src="../libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="../libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="../libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="test.js"></script>
 
   <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
   <script type="text/x-mathjax-config">
@@ -146,7 +573,7 @@
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script> -->
-  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
 </script>
 <script>  
   $(function (){ 
@@ -155,7 +582,7 @@
   });  
   </script>  
   <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
    
