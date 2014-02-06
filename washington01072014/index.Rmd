@@ -13,7 +13,7 @@ url:
 license: by-nc-sa
 widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
-assets: {js: 'test.js'}
+#assets: {js: 'test.js'}
 ---
 ## Teaching statistics for the future
 ### Outline of the talk
@@ -29,7 +29,7 @@ assets: {js: 'test.js'}
 ## About these slides
 * HTML5 using (customized) [Google io2012 style](https://code.google.com/p/io-2012-slides/)
 * Created using [slidify](http://slidify.org)
-* Appear on github at ?????, fork if you'd like
+* Appear on github at (https://github.com/bcaffo/MOOCtalk) fork if you'd like
 * Jointly written with my collaborators Jeff Leek and Roger Peng
 * CC licensed by-nc-sa
 
