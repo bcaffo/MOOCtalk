@@ -190,22 +190,165 @@ Primary characteristics are open access, low cost, scalable, online
 
 ---
 ## Coursera platform, forums
+### Main source for student interaction
+(Forums can be brutal)
 <div align=center>
-<img src="../fig/platformForums.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+--- 
+## Johns Hopkins Biostat Coursera classes
+### Original three
+* Brian Caffo, Roger Peng, Jeff Leek
+* Run 09/2012, 09/2012, 01/2013
+<div align=center>
+<img src="../fig/bootcamp_B-02.jpg" alt="Drawing"/>
+<img src="../fig/computing_B-02.jpg" alt="Drawing"/>
+<img src="../fig/data_B-02.jpg" alt="Drawing"/>
 </div>
 
 ---
-## Coursera platform, forums
-<div align=center>
-<img src="../fig/platformForums2.png" alt="Drawing" style="height: 300;"/>
+## Example course info
+Course | Enrollment | Video | Quiz |
+---|---|---|---|
+MBBC 1 (v2) | 18,621 | 7,941 | 5,361s |
+Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
+Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
+
+---
+## My classes 
+
+<div align="center">
+<img src="../fig/sessionStats.jpg" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Signature track
+
+<div align="center">
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+</div>
+
+- Verification based on typing patterns (highly unique according to Coursera)
+  - Secondary verification via webcams
+- Coursera gives student aid
+- Revenue distribution via agreement between Coursera and partner institution
+- 155 signature track for 20k students in MBBC1 V4
+- Much higher retention and completion rates for signature track
+
+--- &twocol w1:50% w2:50%
+## Interesting fallout from doing this
+
+*** =left
+- Jeff's class was listed as one of the top 10 most enrolled Coursera classes
+  - Roger's class has since eclipsed it in cumulative enrollment
+- Brian and Roger have run signature track ($49 per student)
+- Brian's class featured on the front page of the Washington Post 
+- Roger interviewed on Anderson Cooper and NPR
+
+*** =right
+- Scott Zeger introduced class *Cased Based Introduction to Statistics*
+- Brian introducted *MBBC2*
+- Martin Lindquist introduced *Statistical Analysis of fMRI Data*
+- John McGready introduced *Statistical Reasoning for Public Health*
+
+
+
+---
+## Case studies
+
+<div align="center">
+<img src="../fig/email1.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Case studies
+
+<div align="center">
+<img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
 ---
 ## Statistics, big data, data science
 
 <div align=center>
-<img src="../fig/shortage.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
 </div>
+
+---
+## Complimentary problems
+<div align=center>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Johhs Hopkins Data Science Specilization
+### Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo
+
+<div align=center>
+<img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Courses
+
+<div align=center>
+<img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Specilization certificate
+
+<div align=center>
+<img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+--- &twocol w1:50% w2:50%
+## Unique aspects of the program
+*** =left
+- Completely redesigned stat curriculum
+- 9 signature track courses
+- 1 capstone project course
+- Total cost (modular) $490
+  - $49 per sig track for 10 classes
+
+*** =right
+- Each class is four weeks
+- Quizzes, in video quizzes and peer assessment projects
+- Run monthly after initial rollout
+- All content open source
+
+--- 
+## Platform choices
+> - Everything done on Coursera
+> - All programming in R
+> - All lecture notes done in Slidify (common theme)
+> - All content open source
+> - Version control through git and github
+> - (Students will learn and use git)
+> - RStudio as an IDE
+> - knitr for reproducible documents and report writing
+
+---  &twocol w1:50% w2:50%
+## Standard and non-standard stat content 
+*** =left
+- Basic probability and math stat
+- Statistical inference
+  - Hypothesis tests, confidence intervals, likelihood
+  - Brief intro to Bayesian analysis
+- Regression and generalized linear models
+- Statistical machine learning
+- EDA
+
+*** =right
+- Reproducible research, report generation
+- Presentations
+- Interactive graphics (rgl, rCharts, shiny, manipulate)
+- Data munging, obtaining data
+- Programming
+- Plotting (ggplot, rCharts, R base graphics)
+
 
 ---
 ## Statistics With Interactive R Learning
