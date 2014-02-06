@@ -340,6 +340,7 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 - Regression and generalized linear models
 - Statistical machine learning
 - EDA
+- Data analysis
 
 *** =right
 - Reproducible research, report generation
@@ -348,6 +349,7 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 - Data munging, obtaining data
 - Programming
 - Plotting (ggplot, rCharts, R base graphics)
+- Capstone project
 
 
 ---
