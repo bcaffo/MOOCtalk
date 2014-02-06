@@ -13,7 +13,7 @@ url:
 license: by-nc-sa
 widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
-assets: {js: 'test.js'}
+#assets: {js: 'test.js'}
 ---
 ## Teaching statistics for the future
 ### Outline of the talk
