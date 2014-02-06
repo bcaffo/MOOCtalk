@@ -19,8 +19,8 @@ assets: {js: 'test.js'}
 ### Outline of the talk
 1. Who the heck am I?
 2. A brief taxonomy and history of online educational models
-3. Novel moving target directions of the field statistics
-4. Massive Open Online Courses (MOOCs) 
+3. Massive Open Online Courses (MOOCs) 
+4. Novel moving target directions of the field statistics
 5. JHU Biostat involvement in Coursera
 6. **Data Science series** (bulk of the talk)
 7. SWIRL
@@ -78,7 +78,7 @@ assets: {js: 'test.js'}
 
 
 ---
-## JHU Biostat Onsite Degree Programs
+## JHU Biostat onsite degree programs
 
 <img src="../fig/header-prospective-students.jpg" alt="Drawing" style="width: 250px;"/>
 
@@ -107,14 +107,18 @@ assets: {js: 'test.js'}
 - Covers intro methods and  (mostly) linear models at the doctoral level
 - Recently I've introduced the flipped classroom model
 
----
+--- &twocol w1:50% w2:50%
 ## (Incomplete) characteristics of educational systems
+
+*** =left
 - Online / in person / blended
 - Active/participatory/interactive learning
 - Scalable / non-scalable
 - Low cost / high cost / freemium
 - Student paced / teacher paced
 - Open / restricted access
+
+*** =right
 - Flipped / lecture style / blended 
 - Open / closed source content
 - Instructor interaction
@@ -159,11 +163,12 @@ Primary characteristics are open access, low cost, scalable, online
 
 ---
 ## Also
-### Several university/organization-specific sites
+### Several university/organization-specific sites, platforms and content delivery systems
 - Stanford, CMU, Duke, Harvard, MIT, google ...
-- Varying degrees of content/delivery 
+- Varying degrees of content/delivery
 - EdX platform has been open sourced
 - Google course builder (now contributing to EdX)
+- Massive amount of development going into platforms and instruction sites/portals ()
 
 ---
 ## Coursera platform, videos
@@ -193,6 +198,13 @@ Primary characteristics are open access, low cost, scalable, online
 ## Coursera platform, forums
 <div align=center>
 <img src="../fig/platformForums2.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+---
+## Statistics, big data, data science
+
+<div align=center>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 300;"/>
 </div>
 
 ---
