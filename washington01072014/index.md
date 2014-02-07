@@ -14,15 +14,17 @@ license: by-nc-sa
 widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
 #assets: {js: 'test.js'}
+ext_widgets : {rCharts: [libraries/nvd3]}
+
 ---
 ## Teaching statistics for the future
 ### Outline of the talk
 1. Who the heck am I?
 2. A brief taxonomy and history of online educational models
 3. Massive Open Online Courses (MOOCs) 
-4. Novel moving target directions of the field statistics
-5. JHU Biostat involvement in Coursera
-6. **Data Science series** (bulk of the talk)
+4. JHU Biostat involvement in Coursera
+5. Novel moving target directions of the field statistics
+6. **Data Science series** 
 7. SWIRL
 
 ---
@@ -128,8 +130,8 @@ mode        : selfcontained # {standalone, draft}
 ---
 ## Examples
 > - Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
-> - "Tranditional" online courses are online or blended online and in person and otherwise try to approximate tranditional in person classes. 
-> - Online interactive learning (OIL Code School, Code academy) pimary characteristics are student-paced interactive learning
+> - "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
+> - Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
 > - Intelligent tutoring systems (SWIRL), like OILs just not online
 > - Khan Academy is online, interactive, scalable and low cost
 > - Other modalities : iTunes U, OpenCourseware, Udemy
@@ -168,7 +170,7 @@ Primary characteristics are open access, low cost, scalable, online
 - Varying degrees of content/delivery
 - EdX platform has been open sourced
 - Google course builder (now contributing to EdX)
-- Massive amount of development going into platforms and instruction sites/portals ()
+- Massive amount of development going into platforms and instruction sites/portals
 
 ---
 ## Coursera platform, videos
@@ -193,7 +195,7 @@ Primary characteristics are open access, low cost, scalable, online
 ### Main source for student interaction
 (Forums can be brutal)
 <div align=center>
-<img src="../fig/platformForums.png" alt="Drawing" style="height: 300px;"/>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
 --- 
@@ -357,12 +359,73 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 ### [http://swirlstats.com](http://swirlstats.com)
 
 <div align="center">
-<img src = "../fig/swirl.png" width = 500 border = "0">
+<img src = "../fig/swirl.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
 
+---
+## In the R console
+<div align="center">
+<img src = "../fig/swirl01.png" alt="Drawing" style="height: 500px;"/>
+</div>
 
 
 ---
+## Class selection
+<div align="center">
+<img src = "../fig/swirl02.png" alt="Drawing" style="height: 500px;"/>
+</div>
 
 ---
+## Getting started
+<div align="center">
+<img src = "../fig/swirl03.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl04.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl05.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl06.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Getting help
+<div align="center">
+<img src = "../fig/swirl07.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Play mode
+<div align="center">
+<img src = "../fig/swirl08.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Starting up again
+
+<div align="center">
+<img src = "../fig/swirl09.png" alt="Drawing" style="height: 100px;"/>
+</div>
+
+---
+## Skipping stuff
+<div align="center">
+<img src = "../fig/swirl10.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+Thanks!
+=========
+

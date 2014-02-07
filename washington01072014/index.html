@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/prettify.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../libraries/widgets/quiz/css/demo.css"></link>
 <link rel=stylesheet href="../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="../libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="../libraries/widgets/nvd3/css/rNVD3.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -24,7 +26,11 @@
     src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
-  
+  <script src="../libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="../libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="../libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="../libraries/widgets/nvd3/js/fisheye.js"></script>
+
 
 </head>
 <body style="opacity: 0">
@@ -61,9 +67,9 @@
 <li>Who the heck am I?</li>
 <li>A brief taxonomy and history of online educational models</li>
 <li>Massive Open Online Courses (MOOCs) </li>
-<li>Novel moving target directions of the field statistics</li>
 <li>JHU Biostat involvement in Coursera</li>
-<li><strong>Data Science series</strong> (bulk of the talk)</li>
+<li>Novel moving target directions of the field statistics</li>
+<li><strong>Data Science series</strong> </li>
 <li>SWIRL</li>
 </ol>
 
@@ -259,8 +265,8 @@
   <article data-timings="">
     <ul class = "build incremental">
 <li>Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing</li>
-<li>&quot;Tranditional&quot; online courses are online or blended online and in person and otherwise try to approximate tranditional in person classes. </li>
-<li>Online interactive learning (OIL Code School, Code academy) pimary characteristics are student-paced interactive learning</li>
+<li>&quot;Tranditional&quot; online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. </li>
+<li>Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning</li>
 <li>Intelligent tutoring systems (SWIRL), like OILs just not online</li>
 <li>Khan Academy is online, interactive, scalable and low cost</li>
 <li>Other modalities : iTunes U, OpenCourseware, Udemy</li>
@@ -323,7 +329,7 @@
 <li>Varying degrees of content/delivery</li>
 <li>EdX platform has been open sourced</li>
 <li>Google course builder (now contributing to EdX)</li>
-<li>Massive amount of development going into platforms and instruction sites/portals ()</li>
+<li>Massive amount of development going into platforms and instruction sites/portals</li>
 </ul>
 
   </article>
@@ -379,7 +385,7 @@
 <p>(Forums can be brutal)</p>
 
 <div align=center>
-<img src="../fig/platformForums.png" alt="Drawing" style="height: 300px;"/>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
   </article>
@@ -706,7 +712,7 @@
     <h3><a href="http://swirlstats.com">http://swirlstats.com</a></h3>
 
 <div align="center">
-<img src = "../fig/swirl.png" width = 500 border = "0">
+<img src = "../fig/swirl.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
   </article>
@@ -714,13 +720,139 @@
 </slide>
 
 <slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>In the R console</h2>
+  </hgroup>
   <article data-timings="">
-    
+    <div align="center">
+<img src = "../fig/swirl01.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Class selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl02.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Getting started</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl03.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Feedback</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl04.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>Feedback</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl05.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>Feedback</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl06.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>Getting help</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl07.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h2>Play mode</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl08.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>Starting up again</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl09.png" alt="Drawing" style="height: 100px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  <hgroup>
+    <h2>Skipping stuff</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl10.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  <hgroup>
+    <h1>Thanks!</h1>
+  </hgroup>
   <article data-timings="">
     
   </article>
@@ -931,14 +1063,68 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=34 title=''>
+        data-slide=34 title='In the R console'>
          34
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title=''>
+        data-slide=35 title='Class selection'>
          35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Getting started'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Feedback'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Feedback'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Feedback'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Getting help'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Play mode'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Starting up again'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='Skipping stuff'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='Thanks!'>
+         44
       </a>
     </li>
   </ul>
