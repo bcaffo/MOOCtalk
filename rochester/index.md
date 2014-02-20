@@ -219,14 +219,22 @@ Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
 Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 ---
-## Enrollments by offering
-<iframe src="../fig/classPlot1.html" width=100%, height=600></iframe>
-
----
-## Enrollments by class
+## Enrollments by class and offering
 <iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
 
 
+--- 
+## Some summary statistics
+* Classes considered are MBBC1, MBBC2, CDA
+* A total of 302,416 students enrolled  
+* 10 class offerings
+
+
+* Average of 30,242 students per class.
+* Minimum class size of 5,279 for class
+MBBC2 offering 2
+* Maximum class size of 84,203 for class
+CDA offering 3.
 
 
 ---
