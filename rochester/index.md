@@ -219,16 +219,15 @@ Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
 Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 ---
-## Data for MBBC1 and MBBC2
-<iframe src="../fig/savechart.html" width=100%, height=600></iframe>
-
+## Enrollments by offering
+<iframe src="../fig/classPlot1.html" width=100%, height=600></iframe>
 
 ---
-## My classes 
+## Enrollments by class
+<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
 
-<div align="center">
-<img src="../fig/sessionStats.jpg" alt="Drawing" style="height: 500px;"/>
-</div>
+
+
 
 ---
 ## Signature track

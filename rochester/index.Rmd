@@ -219,28 +219,31 @@ Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
 Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 ---
-## Data for MBBC1 and MBBC2
+## Enrollments by offering
 ```{r, echo = FALSE, results = 'asis'}
 require(rCharts)
 myData <- data.frame(
 enrollment = c(20671, 17481, 15636, 13517, 
-                8274,  5279,     0,     0),
-class = c(rep("MBBC1", 4), rep("MBBC2", 4)),
-offering = as.character(c(2 : 4, 1, 1 : 4))
+                8274,  5279,     0,     0,
+               84203,  54092,  44892,   38371),
+class = c(rep("MBBC1", 4), rep("MBBC2", 4), rep("CDA", 4)),
+offering = as.character(c(c(2 : 4, 1), 1 : 4, c(3, 4, 1, 2)))
 )
 myData <- myData[order(myData$offering),]
 
+n1 <- nPlot(enrollment ~ offering, group = "class", data = myData, type = "multiBarChart")
+n1$save('../fig/classPlot1.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot1.html" width=100%, height=600></iframe>')
+```
+---
+## Enrollments by class
+```{r, echo = FALSE, results = 'asis'}
 n1 <- nPlot(enrollment ~ class, group = "offering", data = myData, type = "multiBarChart")
-n1$save('../fig/savechart.html', cdn = TRUE)
-cat('<iframe src="../fig/savechart.html" width=100%, height=600></iframe>')
+n1$save('../fig/classPlot2.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ```
 
----
-## My classes 
 
-<div align="center">
-<img src="../fig/sessionStats.jpg" alt="Drawing" style="height: 500px;"/>
-</div>
 
 ---
 ## Signature track
