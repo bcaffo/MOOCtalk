@@ -274,7 +274,7 @@ maxE <- noZero$enrollment[n]
 maxEC <- noZero$class[n]
 maxES <- noZero$offering[n]
 ``` 
-* Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
+ * Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
 * Minimum class size of `r prettyNum(minE, big.mark = ',', scientific = FALSE)` for class
 `r minEC` offering `r minES`
 * Maximum class size of `r prettyNum(maxE, big.mark = ',', scienfific = FALSE)` for class
