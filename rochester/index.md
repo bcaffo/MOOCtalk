@@ -225,16 +225,16 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 --- 
 ## Some summary statistics
-* Classes considered are MBBC1, MBBC2, CDA
-* A total of 302,416 students enrolled  
-* 10 class offerings
+* Classes considered are MBBC1, MBBC2, CDA, Case, DA
+* A total of 497,423 students enrolled  
+* 13 class offerings
 
 
-* Average of 30,242 students per class.
+ * Average of 38,263 students per class.
 * Minimum class size of 5,279 for class
 MBBC2 offering 2
-* Maximum class size of 84,203 for class
-CDA offering 3.
+* Maximum class size of 93,136 for class
+DA offering 1.
 
 
 ---

@@ -4,9 +4,9 @@
   <head>
     <link rel='stylesheet' href='http://nvd3.org/src/nv.d3.css'>
     
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' type='text/javascript'></script>
-    <script src='http://d3js.org/d3.v2.min.js' type='text/javascript'></script>
-    <script src='http://nvd3.org/nv.d3.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
     <script src='http://nvd3.org/lib/fisheye.js' type='text/javascript'></script>
     
     <style>
@@ -21,91 +21,201 @@
     
   </head>
   <body>
-    <div id='chart16606e5b24ee' class='rChart nvd3'></div>  
+    <div id='chart294a1b703d73' class='rChart nvd3'></div>  
     
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart16606e5b24ee()
+      drawchart294a1b703d73()
     });
-    function drawchart16606e5b24ee(){  
+    function drawchart294a1b703d73(){  
       var opts = {
- "dom": "chart16606e5b24ee",
+ "dom": "chart294a1b703d73",
 "width":    800,
 "height":    400,
 "x": "class",
 "y": "enrollment",
 "group": "offering",
 "type": "multiBarChart",
-"id": "chart16606e5b24ee" 
+"id": "chart294a1b703d73" 
 },
         data = [
  {
- "enrollment":  13517,
+ "enrollment":          13517,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC1",
 "offering": "1" 
 },
 {
- "enrollment":   8274,
+ "enrollment":           8274,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC2",
 "offering": "1" 
 },
 {
- "enrollment":  44892,
+ "enrollment":          44892,
+"video": null,
+"date": null,
+"soa": null,
 "class": "CDA",
 "offering": "1" 
 },
 {
- "enrollment":  20671,
+ "enrollment":          19631,
+"video":          13386,
+"date": "7/22/2013",
+"soa":           2712,
+"class": "Case",
+"offering": "1" 
+},
+{
+ "enrollment":          93136,
+"video":              0,
+"date": null,
+"soa": null,
+"class": "DA",
+"offering": "1" 
+},
+{
+ "enrollment":          20671,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC1",
 "offering": "2" 
 },
 {
- "enrollment":   5279,
+ "enrollment":           5279,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC2",
 "offering": "2" 
 },
 {
- "enrollment":  38371,
+ "enrollment":          38371,
+"video": null,
+"date": null,
+"soa": null,
 "class": "CDA",
 "offering": "2" 
 },
 {
- "enrollment":  17481,
+ "enrollment":              0,
+"video":              0,
+"date": null,
+"soa":              0,
+"class": "Case",
+"offering": "2" 
+},
+{
+ "enrollment":          82240,
+"video":              0,
+"date": null,
+"soa": null,
+"class": "DA",
+"offering": "2" 
+},
+{
+ "enrollment":          17481,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC1",
 "offering": "3" 
 },
 {
- "enrollment":      0,
+ "enrollment":              0,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC2",
 "offering": "3" 
 },
 {
- "enrollment":  84203,
+ "enrollment":          84203,
+"video": null,
+"date": null,
+"soa": null,
 "class": "CDA",
 "offering": "3" 
 },
 {
- "enrollment":  15636,
+ "enrollment":              0,
+"video":              0,
+"date": null,
+"soa":              0,
+"class": "Case",
+"offering": "3" 
+},
+{
+ "enrollment":              0,
+"video":              0,
+"date": null,
+"soa": null,
+"class": "DA",
+"offering": "3" 
+},
+{
+ "enrollment":          15636,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC1",
 "offering": "4" 
 },
 {
- "enrollment":      0,
+ "enrollment":              0,
+"video": null,
+"date": null,
+"soa": null,
 "class": "MBBC2",
 "offering": "4" 
 },
 {
- "enrollment":  54092,
+ "enrollment":          54092,
+"video": null,
+"date": null,
+"soa": null,
 "class": "CDA",
+"offering": "4" 
+},
+{
+ "enrollment":              0,
+"video":              0,
+"date": null,
+"soa":              0,
+"class": "Case",
+"offering": "4" 
+},
+{
+ "enrollment":              0,
+"video":              0,
+"date": null,
+"soa": null,
+"class": "DA",
 "offering": "4" 
 } 
 ]
   
-      var data = d3.nest()
-        .key(function(d){
-          return opts.group === undefined ? 'main' : d[opts.group]
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
         })
-        .entries(data)
+      }
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
