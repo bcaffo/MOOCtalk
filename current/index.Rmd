@@ -14,10 +14,6 @@ widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
 ext_widgets : {rCharts: [libraries/nvd3]}
 ---
-
-
-
----
 ## Teaching statistics for the future
 ### Outline of the talk
 1. Who the heck am I?
@@ -223,38 +219,67 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 ```{r, echo = FALSE, results = 'asis'}
 require(rCharts)
 myData <- data.frame(
-enrollment = c(20671, 17481, 15636, 13517, 
-                8274,  5279,     0,     0,
-               84203,  54092,  44892,   38371,
-               19631,  0    ,      0,       0,
-               93136, 82240 ,      0,       0), 
-video = c(NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          13386, 0, 0, 0,
-              0, 0, 0, 0),
-date = c(NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          NA, NA, NA, NA,
-         "7/22/2013", NA, NA, NA,
-         NA, NA, NA, NA),
-soa = c(NA, NA, NA, NA,
-        NA, NA, NA, NA,
-        NA, NA, NA, NA,
-        2712, 0, 0, 0,
-        NA, NA, NA, NA),    
-class = c(rep("MBBC1", 4), rep("MBBC2", 4), rep("CDA", 4), rep("Case", 4), rep("DA", 4)),
-offering = as.character(c(2 : 4, 1, 
-                          1 : 4, 
-                          3, 4, 1, 2, 
-                          1 : 4,
-                          1 : 4))
+  enrollment = c(
+    16398, 22153, 18270, 18270, #MBBC1
+    10965,  6742,     0,     0, #MBBC2
+    50883, 44661, 83441, 65002, #CDA
+    101747, 91379,  0, 0, #DA
+    19631, 0, 0, 0), #Case based 
+  date = c(
+    "9/24/12", "4/16/13", "7/29/13", "11/18/13", 
+    "9/30/13", "1/6/14", NA, NA,
+    "9/24/12", "1/2/13", "9/23/13", "1/6/14",
+    "1/22/13", "10/28/13", NA, NA,
+    "7/22/13", NA, NA, NA),
+  soa = c(
+     749, 1427, 1109,  408,
+     508,  291,    0,    0,
+    3938, 6271, 6768, 4092, 
+    4254, 2246,    0,    0, 
+    2712,    0,    0,    0
+    ),    
+  class = c(
+    rep("MBBC1", 4), 
+    rep("MBBC2", 4), 
+    rep("CDA", 4),
+    rep("DA", 4),
+    rep("Case", 4)
+  ),
+  offering = rep(1 : 4, 5)
 )
+
 myData <- myData[order(myData$offering),]
 n1 <- nPlot(enrollment ~ class, group = "offering", data = myData, type = "multiBarChart")
 n1$save('../fig/classPlot2.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ```
+
+---
+```{r}
+n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
+n2$save('../fig/classPlot3.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot3.html" width=100%, height=600></iframe>')
+```
+---
+```{r}
+temp <- myData[myData$class == "MBBC1",]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp$date <- format(temp$date, "%Y-%m-%d")
+#temp$cumEnroll <- cumsum(temp$enrollment)
+#temp$cumSOA <- cumsum(temp$soa) * 10
+#m1 <- mPlot(x = "date", y = c("cumEnroll", "cumSOA"), type = "Line", data = temp)
+#m1$set(pointSize = 10, lineWidth = 5)
+m1 <- mPlot(enrollment ~ type = "Line", data = temp))
+```
+
+---
+## Important consideration about completion rates
+* Students participate in MOOCs for a variety of reasons
+* Numerous students sign up for a course, but do not 
+actively participate
+* Current (ongoing) MBBC 1
+  * 1% of enrolled students have taken any quiz whatsoever
+  * 25% of enrolled students have watched any video content
 
 --- 
 ## Some summary statistics
