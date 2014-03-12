@@ -255,21 +255,34 @@ cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ```
 
 ---
-```{r}
+```{r, echo = FALSE, results = 'asis'}
 n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
 n2$save('../fig/classPlot3.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot3.html" width=100%, height=600></iframe>')
 ```
+
 ---
-```{r}
+```{r, echo = FALSE, results = 'asis'}
 temp <- myData[myData$class == "MBBC1",]
 temp$date <- as.Date(temp$date, format = "%m/%d/%y")
 temp$date <- format(temp$date, "%Y-%m-%d")
-#temp$cumEnroll <- cumsum(temp$enrollment)
-#temp$cumSOA <- cumsum(temp$soa) * 10
-#m1 <- mPlot(x = "date", y = c("cumEnroll", "cumSOA"), type = "Line", data = temp)
-#m1$set(pointSize = 10, lineWidth = 5)
-m1 <- mPlot(enrollment ~ type = "Line", data = temp))
+temp$soa10 <- temp$soa * 10
+m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
+m1$set(pointSize = 10, lineWidth = 5)
+m1$save('../fig/classPlot5.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>')
+```
+
+---
+```{r, echo = FALSE, results = 'asis'}
+temp <- myData[myData$class == "CDA",]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp$date <- format(temp$date, "%Y-%m-%d")
+temp$soa10 <- temp$soa * 10
+m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
+m1$set(pointSize = 10, lineWidth = 5)
+m1$save('../fig/classPlot4.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot4.html" width=100%, height=600></iframe>')
 ```
 
 ---
