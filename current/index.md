@@ -220,65 +220,21 @@ Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 ---
 ## Enrollments by class and offering
-```{r, echo = FALSE, results = 'asis'}
-require(rCharts)
-myData <- data.frame(
-enrollment = c(20671, 17481, 15636, 13517, 
-                8274,  5279,     0,     0,
-               84203,  54092,  44892,   38371,
-               19631,  0    ,      0,       0,
-               93136, 82240 ,      0,       0), 
-video = c(NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          13386, 0, 0, 0,
-              0, 0, 0, 0),
-date = c(NA, NA, NA, NA,
-          NA, NA, NA, NA,
-          NA, NA, NA, NA,
-         "7/22/2013", NA, NA, NA,
-         NA, NA, NA, NA),
-soa = c(NA, NA, NA, NA,
-        NA, NA, NA, NA,
-        NA, NA, NA, NA,
-        2712, 0, 0, 0,
-        NA, NA, NA, NA),    
-class = c(rep("MBBC1", 4), rep("MBBC2", 4), rep("CDA", 4), rep("Case", 4), rep("DA", 4)),
-offering = as.character(c(2 : 4, 1, 
-                          1 : 4, 
-                          3, 4, 1, 2, 
-                          1 : 4,
-                          1 : 4))
-)
-myData <- myData[order(myData$offering),]
-n1 <- nPlot(enrollment ~ class, group = "offering", data = myData, type = "multiBarChart")
-n1$save('../fig/classPlot2.html', cdn = TRUE)
-cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
-```
+<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
+
 
 --- 
 ## Some summary statistics
-* Classes considered are `r unique(myData$class)`
-* A total of `r prettyNum(sum(myData$enrollment), big.mark=',', scientific = FALSE)` students enrolled  
-* `r  sum(myData$enrollment != 0)` class offerings
-```{r, echo = FALSE, results = 'hide'}
-e <- myData$enrollment
-avg <- sum(e) / sum(e != 0 )
-noZero <- myData[e != 0,]
-noZero <- noZero[order(noZero$enrollment),]
-minE <- noZero$enrollment[1]
-minEC <- noZero$class[1]
-minES <- noZero$offering[1]
-n <- nrow(noZero)
-maxE <- noZero$enrollment[n]
-maxEC <- noZero$class[n]
-maxES <- noZero$offering[n]
-``` 
-* Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
-* Minimum class size of `r prettyNum(minE, big.mark = ',', scientific = FALSE)` for class
-`r minEC` offering `r minES`
-* Maximum class size of `r prettyNum(maxE, big.mark = ',', scienfific = FALSE)` for class
-`r maxEC` offering `r maxES`.
+* Classes considered are MBBC1, MBBC2, CDA, Case, DA
+* A total of 497,423 students enrolled  
+* 13 class offerings
+
+
+ * Average of 38,263 students per class.
+* Minimum class size of 5,279 for class
+MBBC2 offering 2
+* Maximum class size of 93,136 for class
+DA offering 1.
 
 
 ---
