@@ -226,6 +226,8 @@ Equipment
 </div>
 
 ---
+
+
 ## Enrollments by class and offering
 <iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
 

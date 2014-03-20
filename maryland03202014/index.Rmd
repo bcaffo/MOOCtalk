@@ -226,9 +226,11 @@ Equipment
 </div>
 
 ---
+```{r, echo = FALSE, results='hide'}
+library(rCharts)
+```
 ## Enrollments by class and offering
 ```{r, echo = FALSE, results = 'asis'}
-require(rCharts)
 myData <- data.frame(
   enrollment = c(
     16398, 22153, 18270, 18270, #MBBC1
