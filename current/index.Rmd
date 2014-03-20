@@ -126,12 +126,12 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 
 ---
 ## Examples
-> - Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
-> - "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
-> - Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
-> - Intelligent tutoring systems (SWIRL), like OILs just not online
-> - Khan Academy is online, interactive, scalable and low cost
-> - Other modalities : iTunes U, OpenCourseware, Udemy
+- Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
+- "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
+- Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
+- Intelligent tutoring systems (swirl), like OILs just not necessarily online
+- Khan Academy is online, interactive, scalable and low cost
+- Other modalities : iTunes U, OpenCourseware, Udemy
 
 ---
 ## MOOCs 
@@ -175,6 +175,25 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
 </div>
 
+--- 
+## Example videos (on YouTube)
+
+- [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
+- [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
+
+Equipment
+
+- [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
+- [Yeti usb microphone](http://bluemic.com/yeti/) 
+- [Camtasia](http://www.techsmith.com/camtasia.html)
+- [Note 2](http://www.samsung.com/global/microsite/galaxynote/note2/index.html?type=find)
+- [Lecture notes](https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes)
+- [ffmpeg](http://www.ffmpeg.org/)
+
+<img border="0" src="http://cdn.bluemic.com/images/yeti/main-right.jpg" alt="Pulpit rock" width="100" >
+
+
+
 ---
 ## Coursera platform, quizzes
 <div align=center>
@@ -205,14 +224,6 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/computing_B-02.jpg" alt="Drawing"/>
 <img src="../fig/data_B-02.jpg" alt="Drawing"/>
 </div>
-
----
-## Example course info
-Course | Enrollment | Video | Quiz |
----|---|---|---|
-MBBC 1 (v2) | 18,621 | 7,941 | 5,361s |
-Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
-Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
 
 ---
 ## Enrollments by class and offering
@@ -255,13 +266,15 @@ cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ```
 
 ---
+## Statements of accomplishment by offering
 ```{r, echo = FALSE, results = 'asis'}
 n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
 n2$save('../fig/classPlot3.html', cdn = TRUE)
-cat('<iframe src="../fig/classPlot3.html" width=100%, height=600></iframe>')
+cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
 ```
 
 ---
+## Over time, MBBC 1
 ```{r, echo = FALSE, results = 'asis'}
 temp <- myData[myData$class == "MBBC1",]
 temp$date <- as.Date(temp$date, format = "%m/%d/%y")
@@ -274,6 +287,7 @@ cat('<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>')
 ```
 
 ---
+## Over time CDA
 ```{r, echo = FALSE, results = 'asis'}
 temp <- myData[myData$class == "CDA",]
 temp$date <- as.Date(temp$date, format = "%m/%d/%y")
@@ -350,6 +364,21 @@ maxES <- noZero$offering[n]
 - Martin Lindquist introduced *Statistical Analysis of fMRI Data*
 - John McGready introduced *Statistical Reasoning for Public Health*
 
+---
+## MOOCs by university
+```{r, echo=FALSE, results='asis'}
+moocData <- data.frame(
+  university =  c('JHU', 'Penn', 'Duke', 'Stanford', 'UW', 'GT', 'JHU Biostat', 'MIT', 'Harvard', 'Berkeley'),
+  courses = c(32, 31, 20, 18, 16, 16, 16, 26, 25, 18),
+  platform = c(rep('Coursera', 7), rep('EDX', 3))
+)
+n3 <- nPlot(courses ~ university, group = "platform", data =  moocData, type = "multiBarChart")
+n3$save('../fig/classPlot5.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>')
+  
+  
+
+```
 
 
 ---

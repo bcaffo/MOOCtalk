@@ -14,10 +14,6 @@ widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
 ext_widgets : {rCharts: [libraries/nvd3]}
 ---
-
-
-
----
 ## Teaching statistics for the future
 ### Outline of the talk
 1. Who the heck am I?
@@ -130,12 +126,12 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 
 ---
 ## Examples
-> - Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
-> - "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
-> - Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
-> - Intelligent tutoring systems (SWIRL), like OILs just not online
-> - Khan Academy is online, interactive, scalable and low cost
-> - Other modalities : iTunes U, OpenCourseware, Udemy
+- Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
+- "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
+- Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
+- Intelligent tutoring systems (swirl), like OILs just not necessarily online
+- Khan Academy is online, interactive, scalable and low cost
+- Other modalities : iTunes U, OpenCourseware, Udemy
 
 ---
 ## MOOCs 
@@ -179,6 +175,25 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
 </div>
 
+--- 
+## Example videos (on YouTube)
+
+- [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
+- [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
+
+Equipment
+
+- [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
+- [Yeti usb microphone](http://bluemic.com/yeti/) 
+- [Camtasia](http://www.techsmith.com/camtasia.html)
+- [Note 2](http://www.samsung.com/global/microsite/galaxynote/note2/index.html?type=find)
+- [Lecture notes](https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes)
+- [ffmpeg](http://www.ffmpeg.org/)
+
+<img border="0" src="http://cdn.bluemic.com/images/yeti/main-right.jpg" alt="Pulpit rock" width="100" >
+
+
+
 ---
 ## Coursera platform, quizzes
 <div align=center>
@@ -211,29 +226,45 @@ Primary characteristics are open access, low cost, scalable, online
 </div>
 
 ---
-## Example course info
-Course | Enrollment | Video | Quiz |
----|---|---|---|
-MBBC 1 (v2) | 18,621 | 7,941 | 5,361s |
-Computing for Data Analsis (v2) | 50,651 | 26,707 | 11,271 |
-Data Analysis (v1) | 40,863 | 29,081 | 16,146 |
-
----
 ## Enrollments by class and offering
 <iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
 
 
+---
+## Statements of accomplishment by offering
+<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>
+
+
+---
+## Over time, MBBC 1
+<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>
+
+
+---
+## Over time CDA
+<iframe src="../fig/classPlot4.html" width=100%, height=600></iframe>
+
+
+---
+## Important consideration about completion rates
+* Students participate in MOOCs for a variety of reasons
+* Numerous students sign up for a course, but do not 
+actively participate
+* Current (ongoing) MBBC 1
+  * 1% of enrolled students have taken any quiz whatsoever
+  * 25% of enrolled students have watched any video content
+
 --- 
 ## Some summary statistics
-* Classes considered are MBBC1, MBBC2, CDA, Case, DA
-* A total of 497,423 students enrolled  
+* Classes considered are MBBC1, MBBC2, CDA, DA, Case
+* A total of 549,542 students enrolled  
 * 13 class offerings
 
 
- * Average of 38,263 students per class.
-* Minimum class size of 5,279 for class
+ * Average of 42,272 students per class.
+* Minimum class size of 6,742 for class
 MBBC2 offering 2
-* Maximum class size of 93,136 for class
+* Maximum class size of 101,747 for class
 DA offering 1.
 
 
@@ -267,6 +298,10 @@ DA offering 1.
 - Brian introducted *MBBC2*
 - Martin Lindquist introduced *Statistical Analysis of fMRI Data*
 - John McGready introduced *Statistical Reasoning for Public Health*
+
+---
+## MOOCs by university
+<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>
 
 
 
