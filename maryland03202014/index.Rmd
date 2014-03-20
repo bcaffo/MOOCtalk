@@ -373,14 +373,11 @@ moocData <- data.frame(
   platform = c(rep('Coursera', 7), rep('EDX', 3))
 )
 n3 <- nPlot(courses ~ university, group = "platform", data =  moocData, type = "multiBarChart")
-n3$save('../fig/classPlot5.html', cdn = TRUE)
-cat('<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>')
-  
-  
-
+n3$save('../fig/classPlot6.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')  
 ```
 
-
+  
 ---
 ## Case studies
 
