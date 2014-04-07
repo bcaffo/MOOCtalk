@@ -375,6 +375,9 @@ moocData <- data.frame(
 n3 <- nPlot(courses ~ university, group = "platform", data =  moocData, type = "multiBarChart")
 n3$save('../fig/classPlot5.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>')
+  
+  
+
 ```
 
 
@@ -444,14 +447,14 @@ cat('<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>')
 
 --- 
 ## Platform choices
-- Everything done on Coursera
-- All programming in R
-- All lecture notes done in Slidify (common theme)
-- All content open source
-- Version control through git and github
-- (Students will learn and use git)
-- RStudio as an IDE
-- knitr for reproducible documents and report writing
+> - Everything done on Coursera
+> - All programming in R
+> - All lecture notes done in Slidify (common theme)
+> - All content open source
+> - Version control through git and github
+> - (Students will learn and use git)
+> - RStudio as an IDE
+> - knitr for reproducible documents and report writing
 
 ---  &twocol w1:50% w2:50%
 ## Standard and non-standard stat content 
