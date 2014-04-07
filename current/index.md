@@ -301,10 +301,10 @@ DA offering 1.
 
 ---
 ## MOOCs by university
-<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>
+<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>
 
 
-
+  
 ---
 ## Case studies
 

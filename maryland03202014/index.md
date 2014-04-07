@@ -226,6 +226,8 @@ Equipment
 </div>
 
 ---
+
+
 ## Enrollments by class and offering
 <iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
 
@@ -301,10 +303,10 @@ DA offering 1.
 
 ---
 ## MOOCs by university
-<iframe src="../fig/classPlot5.html" width=100%, height=600 ></iframe>
+<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>
 
 
-
+  
 ---
 ## Case studies
 
@@ -371,14 +373,14 @@ DA offering 1.
 
 --- 
 ## Platform choices
-> - Everything done on Coursera
-> - All programming in R
-> - All lecture notes done in Slidify (common theme)
-> - All content open source
-> - Version control through git and github
-> - (Students will learn and use git)
-> - RStudio as an IDE
-> - knitr for reproducible documents and report writing
+- Everything done on Coursera
+- All programming in R
+- All lecture notes done in Slidify (common theme)
+- All content open source
+- Version control through git and github
+- (Students will learn and use git)
+- RStudio as an IDE
+- knitr for reproducible documents and report writing
 
 ---  &twocol w1:50% w2:50%
 ## Standard and non-standard stat content 

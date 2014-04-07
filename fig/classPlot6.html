@@ -1,0 +1,138 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/assets/css/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart4c3451553fde' class='rChart nvd3'></div>  
+    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart4c3451553fde()
+    });
+    function drawchart4c3451553fde(){  
+      var opts = {
+ "dom": "chart4c3451553fde",
+"width":    800,
+"height":    400,
+"x": "university",
+"y": "courses",
+"group": "platform",
+"type": "multiBarChart",
+"id": "chart4c3451553fde" 
+},
+        data = [
+ {
+ "university": "JHU",
+"courses":             32,
+"platform": "Coursera" 
+},
+{
+ "university": "Penn",
+"courses":             31,
+"platform": "Coursera" 
+},
+{
+ "university": "Duke",
+"courses":             20,
+"platform": "Coursera" 
+},
+{
+ "university": "Stanford",
+"courses":             18,
+"platform": "Coursera" 
+},
+{
+ "university": "UW",
+"courses":             16,
+"platform": "Coursera" 
+},
+{
+ "university": "GT",
+"courses":             16,
+"platform": "Coursera" 
+},
+{
+ "university": "JHU Biostat",
+"courses":             16,
+"platform": "Coursera" 
+},
+{
+ "university": "MIT",
+"courses":             26,
+"platform": "EDX" 
+},
+{
+ "university": "Harvard",
+"courses":             25,
+"platform": "EDX" 
+},
+{
+ "university": "Berkeley",
+"courses":             18,
+"platform": "EDX" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+  </body>
+</html>
