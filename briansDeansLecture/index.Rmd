@@ -1,0 +1,569 @@
+---
+title       : Teaching statistics for the future
+subtitle    : The MOOC revolution and beyond
+author      : Brian Caffo
+job         : Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health
+logo        : bloomberg_shield.png
+framework   : io2012
+highlighter : highlight.js  
+hitheme     : tomorrow       
+url:
+    lib: ../libraries
+    assets: ../assets
+widgets     : [mathjax, quiz, bootstrap]
+mode        : selfcontained # {standalone, draft}
+ext_widgets : {rCharts: [libraries/nvd3]}
+---
+
+## Teaching statistics for the future
+### Outline of the talk
+1. What I supposedly do during the day
+2. A brief taxonomy and history of online educational models
+3. Massive Open Online Courses (MOOCs) 
+4. JHU Biostat involvement in Coursera
+5. Novel moving target directions of the field statistics
+6. **Data Science series** 
+7. SWIRL
+
+---
+## About these slides
+* HTML5 using (customized) [Google io2012 style](https://code.google.com/p/io-2012-slides/)
+* Created using [slidify](http://slidify.org)
+* Appear on github at (https://github.com/bcaffo/MOOCtalk) fork if you'd like
+* Jointly written with my collaborators Jeff Leek and Roger Peng
+* CC licensed by-nc-sa
+
+---
+## Thanks to the dean
+For taking time out of his busy schedule of cracking down on Delta Tau Chi for
+this talk
+
+<div align = "center">
+<img src="../fig/Animal-House-21.jpg">
+</div>
+
+---
+## Core team
+
+<div align="center">
+<img src="../fig/brianCaffo.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/jeffLeek.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/rogerPeng.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+<div align="center">
+<img src="../fig/nickyC.jpg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/seanKross.png" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+---
+## Plus generous contributions from the
+- [Department of Biostatistics](http://www.biostat.jhsph.edu)
+- [Center for Teaching and Learning](http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/)
+- [Bloomberg School of Public Health](http://www.jhsph.edu)
+- [Johns Hopkins University](http://www.jhu.edu)
+- [Coursera](http://coursera.org)
+- Steve, Mike, Karen, Sukon
+- Everyone at CTL
+- Everone at Multimedia 
+- Team SWIRL
+- Lauren and Ethan (Brian's 2013 interns)
+- Contributions from github pull requests
+- Tolerant families!
+- A half of a million intrepid self learners
+
+---
+## My day job(s)
+### SMART (www.smart-stats.org)
+<div align="center">
+<img src="../fig/smart.png" alt="Drawing" style="width: 700px;"/>
+</div>
+
+---
+## Connectomics
+### resting state fMRI
+<div align="center"><img src="../fig/defaultMode1.png" alt="Drawing" style="width: 600px;"/></div>
+<br>
+<div align="center">
+<img src="../fig/defaultMode2.png" alt="Drawing" style="width: 600px;"/></div>
+
+--- &twocol w1:50% w2:50%
+## (Incomplete) characteristics of educational systems
+
+*** =left
+- Online / in person / blended
+- Active/participatory/interactive learning
+- Scalable / non-scalable
+- Low cost / high cost / freemium
+- Student paced / teacher paced
+- Open / restricted access
+
+*** =right
+- Flipped / lecture style / blended 
+- Open / closed source content
+- Instructor interaction
+- Credentialing 
+- Funding model
+
+---
+## Examples
+- Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing
+- "Tranditional" online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. 
+- Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning
+- Intelligent tutoring systems (swirl), like OILs just not necessarily online
+- Khan Academy is online, interactive, scalable and low cost
+- Other modalities : iTunes U, OpenCourseware, Udemy
+
+---
+## MOOCs 
+
+Primary characteristics are open access, low cost, scalable, online 
+
+### (every letter is negotiable, from Wikipedia citing Mathieu Plorde)
+<div align="center">
+<a href=http://www.flickr.com/photos/23311795@N04/8620174342>
+<img src="../fig/MOOC_poster_mathplourde.jpg" alt="Drawing" style="width: 600px;"/>
+</a>
+</div>
+
+---
+## Most visible MOOC instruction sites
+<a href=https://www.edx.org/>
+<img src="../fig/edX.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udacity.com/>
+<img src="../fig/udacity.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udemy.com/>
+<img src="../fig/udemy.jpeg" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://corsera.rog/>
+<img src="../fig/coursera.png" alt="Drawing" style="height: 300;"/>
+</a>
+
+---
+## Also
+### Several university/organization-specific sites, platforms and content delivery systems
+- Stanford, CMU, Duke, Harvard, MIT, google ...
+- Varying degrees of content/delivery
+- EdX platform has been open sourced
+- Google course builder (now contributing to EdX)
+- Massive amount of development going into platforms and instruction sites/portals
+
+---
+## Coursera platform, videos
+<div align=center>
+<img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+--- 
+## Example videos (on YouTube)
+
+- [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
+- [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
+
+Equipment
+
+- [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
+- [Yeti usb microphone](http://bluemic.com/yeti/) 
+- [Camtasia](http://www.techsmith.com/camtasia.html)
+- [Note 2](http://www.samsung.com/global/microsite/galaxynote/note2/index.html?type=find)
+- [Lecture notes](https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes)
+- [ffmpeg](http://www.ffmpeg.org/)
+
+<img border="0" src="http://cdn.bluemic.com/images/yeti/main-right.jpg" alt="Pulpit rock" width="100" >
+
+---
+## Coursera platform, quizzes
+<div align=center>
+<img src="../fig/platformQuizzes.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+---
+## Coursera platform, peer grading
+<div align=center>
+<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+---
+## Coursera platform, forums
+### Main source for student interaction
+(Forums can be brutal)
+<div align=center>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+--- 
+## Johns Hopkins Biostat Coursera classes
+### Original three
+* Brian Caffo, Roger Peng, Jeff Leek
+* Run 09/2012, 09/2012, 01/2013
+<div align=center>
+<img src="../fig/bootcamp_B-02.jpg" alt="Drawing"/>
+<img src="../fig/computing_B-02.jpg" alt="Drawing"/>
+<img src="../fig/data_B-02.jpg" alt="Drawing"/>
+</div>
+
+---
+## Enrollments by class and offering
+```{r dataLoad, echo = FALSE, results = 'asis'}
+require(rCharts)
+myData <- data.frame(
+  enrollment = c(
+    16398, 22153, 18270, 18270, 16454, #MBBC1
+    10965,  6742,     0,     0, 0, #MBBC2
+    50883, 44661, 83441, 65002, 0, #CDA
+    101747, 91379,  0, 0, 0,#DA
+    19631, 0, 0, 0, 0, #Case based 
+    26063, 0, 0, 0, 0, #stat reasoning
+    23947, 0, 0, 0, 0, #, FMRI
+    64515, 0, 0, 0, 0, #Toolbox
+    62433, 0, 0, 0, 0, 
+    33737, 0, 0, 0, 0 
+    ),
+  date = c(
+    "9/24/12", "4/16/13", "7/29/13", "11/18/13", "3/3/14",
+    "9/30/13", "1/6/14", NA, NA, NA,
+    "9/24/12", "1/2/13", "9/23/13", "1/6/14", NA, 
+    "1/22/13", "10/28/13", NA, NA, NA,
+    "7/22/13", NA, NA, NA, NA,
+    "1/21/14", NA, NA, NA, NA,
+    "2/24/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA
+    ),
+  soa = c(
+     749, 1427, 1109,  408, 196, 
+     508,  291,    0,    0,   0,
+    3938, 6271, 6768, 4092,   0,
+    4254, 2246,    0,    0,   0,
+    2712,    0,    0,    0,   0,
+    1068,    0,    0,    0,   0,  
+    1682,    0,    0,    0,   0,
+    6467,    0,    0,    0,   0,
+    2965,    0,    0,    0,   0,
+     781,    0,    0,    0,   0
+    ),    
+  class = c(
+    rep("MBBC1", 5), 
+    rep("MBBC2", 5), 
+    rep("CDA", 5),
+    rep("DA", 5),
+    rep("Case", 5),
+    rep("StatReas", 5),
+    rep("fMRI", 5),
+    rep("Tools", 5),
+    rep("Rprog", 5),
+    rep("Clean", 5)
+  ),
+  offering = rep(1 : 5, 10),
+  ds = rep(c(rep(0, 7), rep(1, 3)), rep(5, 10)) 
+)
+
+myData <- myData[order(myData$offering),]
+n1 <- nPlot(enrollment ~ class, group = "offering", data = myData[myData$ds == 0,], type = "multiBarChart")
+n1$save('../fig/classPlot2.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
+```
+
+---
+## Statements of accomplishment by offering
+```{r soa, echo = FALSE, results = 'asis'}
+n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
+n2$save('../fig/classPlot3.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
+```
+
+
+
+
+---
+## Over time
+```{r gv, echo = FALSE, results = 'asis'}
+suppressPackageStartupMessages(library(googleVis))
+temp <- myData[!is.na(myData$date),]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+motion <- gvisMotionChart(temp, idvar = "class", timevar = "date", options=list(width=600, height=400))
+print(motion, "chart")
+#cat(motion$html$chart, file = "../fig/motionPlot.html")
+#cat('<iframe src="../fig/motionPlot.html" width=100%, height=600></iframe>')
+```
+
+---
+## Over time, MBBC 1
+```{r, echo = FALSE, results = 'asis'}
+temp <- myData[myData$class == "MBBC1",]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp$date <- format(temp$date, "%Y-%m-%d")
+temp$soa10 <- temp$soa * 10
+m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
+m1$set(pointSize = 10, lineWidth = 5)
+m1$save('../fig/classPlot5.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>')
+```
+
+
+----
+## Cumulative enrollment over all classes over time
+```{r, echo = FALSE}
+temp <- myData[!is.na(myData$date),]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp <- temp[order(temp$date),]
+temp$cumE <- cumsum(temp$enrollment)
+temp$cumSOA <- cumsum(temp$soa)
+plot(temp$date, temp$cumE, type = "l", frame = FALSE, xlab = "Date", ylab = "Cumulative Enrollment", lwd = 4, col = "salmon")
+lines(temp$date, 10 * temp$cumSOA, lwd = 4, col = "lightblue")
+```
+
+---
+## Important consideration about completion rates
+* Students participate in MOOCs for a variety of reasons
+* Numerous students sign up for a course, but do not 
+actively participate
+* Recent MBBC 1
+  * 1% of enrolled students have taken any quiz whatsoever
+  * 25% of enrolled students have watched any video content
+
+--- 
+## Some summary statistics
+* Classes considered are `r unique(myData$class)`
+* A total of `r prettyNum(sum(myData$enrollment), big.mark=',', scientific = FALSE)` students enrolled  
+* `r  sum(myData$enrollment != 0)` class offerings
+```{r, echo = FALSE, results = 'hide'}
+e <- myData$enrollment
+avg <- sum(e) / sum(e != 0 )
+noZero <- myData[e != 0,]
+noZero <- noZero[order(noZero$enrollment),]
+minE <- noZero$enrollment[1]
+minEC <- noZero$class[1]
+minES <- noZero$offering[1]
+n <- nrow(noZero)
+maxE <- noZero$enrollment[n]
+maxEC <- noZero$class[n]
+maxES <- noZero$offering[n]
+``` 
+* Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
+* Minimum class size of `r prettyNum(minE, big.mark = ',', scientific = FALSE)` for class
+`r minEC` offering `r minES`
+* Maximum class size of `r prettyNum(maxE, big.mark = ',', scienfific = FALSE)` for class
+`r maxEC` offering `r maxES`.
+
+---
+## Signature track
+
+<div align="center">
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+</div>
+
+- Verification based on typing patterns (highly unique according to Coursera)
+  - Secondary verification via webcams
+- Coursera gives student aid
+- Revenue distribution via agreement between Coursera and partner institution
+- 155 signature track for 20k students in MBBC1 V4
+- Much higher retention and completion rates for signature track
+
+--- &twocol w1:50% w2:50%
+## Interesting fallout from doing this
+
+*** =left
+- Jeff's class was listed as one of the top 10 most enrolled Coursera classes
+  - Roger's class has since eclipsed it in cumulative enrollment
+- Brian and Roger have run signature track ($49 per student)
+- Brian's class featured on the front page of the Washington Post 
+- Roger interviewed on Anderson Cooper and NPR
+
+*** =right
+- Scott Zeger introduced class *Cased Based Introduction to Statistics*
+- Brian introducted *MBBC2*
+- Martin Lindquist introduced *Statistical Analysis of fMRI Data*
+- John McGready introduced *Statistical Reasoning for Public Health*
+
+---
+## MOOCs by university
+```{r, echo=FALSE, results='asis'}
+moocData <- data.frame(
+  university =  c('JHU', 'Penn', 'Duke', 'Stanford', 'UW', 'GT', 'JHU Biostat', 'MIT', 'Harvard', 'Berkeley'),
+  courses = c(32, 31, 20, 18, 16, 16, 16, 26, 25, 18),
+  platform = c(rep('Coursera', 7), rep('EDX', 3))
+)
+n3 <- nPlot(courses ~ university, group = "platform", data =  moocData, type = "multiBarChart")
+n3$save('../fig/classPlot6.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')  
+```
+
+  
+---
+## Case studies
+
+<div align="center">
+<img src="../fig/email1.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Case studies
+
+<div align="center">
+<img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Statistics, big data, data science
+
+<div align=center>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Complimentary problems
+<div align=center>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Johhs Hopkins Data Science Specialization
+### Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo
+
+<div align=center>
+<img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Courses
+
+<div align=center>
+<img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Specialization certificate
+
+<div align=center>
+<img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+--- &twocol w1:50% w2:50%
+## Unique aspects of the program
+*** =left
+- Completely redesigned stat curriculum
+- 9 signature track courses
+- 1 capstone project course
+- Total cost (modular) $490
+  - $49 per sig track for 10 classes
+
+*** =right
+- Each class is four weeks
+- Quizzes, in video quizzes and peer assessment projects
+- Run monthly after initial rollout
+- All content open source
+
+--- 
+## Platform choices
+> - Everything done on Coursera
+> - All programming in R
+> - All lecture notes done in Slidify (common theme)
+> - All content open source
+> - Version control through git and github
+> - (Students will learn and use git)
+> - RStudio as an IDE
+> - knitr for reproducible documents and report writing
+
+---  &twocol w1:50% w2:50%
+## Standard and non-standard stat content 
+*** =left
+- Basic probability and math stat
+- Statistical inference
+  - Hypothesis tests, confidence intervals, likelihood
+  - Brief intro to Bayesian analysis
+- Regression and generalized linear models
+- Statistical machine learning
+- EDA
+- Data analysis
+
+*** =right
+- Reproducible research, report generation
+- Presentations
+- Interactive graphics (rgl, rCharts, shiny, manipulate)
+- Data munging, obtaining data
+- Programming
+- Plotting (ggplot2, rCharts, R base graphics)
+- Capstone project
+
+
+---
+## Statistics With Interactive R Learning
+### [http://swirlstats.com](http://swirlstats.com)
+
+<div align="center">
+<img src = "../fig/swirl.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+
+---
+## In the R console
+<div align="center">
+<img src = "../fig/swirl01.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+
+---
+## Class selection
+<div align="center">
+<img src = "../fig/swirl02.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Getting started
+<div align="center">
+<img src = "../fig/swirl03.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl04.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl05.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Feedback
+<div align="center">
+<img src = "../fig/swirl06.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Getting help
+<div align="center">
+<img src = "../fig/swirl07.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Play mode
+<div align="center">
+<img src = "../fig/swirl08.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Starting up again
+
+<div align="center">
+<img src = "../fig/swirl09.png" alt="Drawing" style="height: 100px;"/>
+</div>
+
+---
+## Skipping stuff
+<div align="center">
+<img src = "../fig/swirl10.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+Thanks!
+=========
+
