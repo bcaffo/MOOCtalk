@@ -403,74 +403,72 @@ DA offering 1.
 
 
 ---
-## Statistics With Interactive R Learning
-### [http://swirlstats.com](http://swirlstats.com)
-
+<br>
+<br>
+<br>
 <div align="center">
-<img src = "../fig/swirl.png" alt="Drawing" style="height: 300px;"/>
-</div>
-
-
----
-## In the R console
-<div align="center">
-<img src = "../fig/swirl01.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
-
----
-## Class selection
-<div align="center">
-<img src = "../fig/swirl02.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
 </div>
 
 ---
-## Getting started
+## A friendlier way to learn R...
+
 <div align="center">
-<img src = "../fig/swirl03.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 11.58.39.png" style="height: 500px;"/>
 </div>
 
 ---
-## Feedback
+## Self-paced and interactive
+
 <div align="center">
-<img src = "../fig/swirl04.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.02.43.png" style="height: 500px;"/>
 </div>
 
 ---
-## Feedback
+## Learn R and stats, together
+
 <div align="center">
-<img src = "../fig/swirl05.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.06.28.png" style="height: 500px;"/>
 </div>
 
 ---
-## Feedback
+## swirl + Coursera
+
 <div align="center">
-<img src = "../fig/swirl06.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.16.23.png" style="height: 500px;"/>
 </div>
 
 ---
-## Getting help
+## Get Coursera credit, automatically
+
 <div align="center">
-<img src = "../fig/swirl07.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.17.26.png" style="height: 500px;"/>
 </div>
 
 ---
-## Play mode
+## Make your own interactive content
+
 <div align="center">
-<img src = "../fig/swirl08.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
 </div>
 
 ---
-## Starting up again
+## swirlstats.com
 
 <div align="center">
-<img src = "../fig/swirl09.png" alt="Drawing" style="height: 100px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
 </div>
 
 ---
-## Skipping stuff
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div align="center">
-<img src = "../fig/swirl10.png" alt="Drawing" style="height: 500px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
 </div>
 
 ---
