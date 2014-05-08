@@ -221,14 +221,14 @@ Equipment
 ---
 ## Over time
 <!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Thu May 08 17:31:19 2014 -->
+<!-- Thu May 08 17:45:17 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID186c20b24f9d () {
+function gvisDataMotionChartID186c5b7b3efd () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -396,14 +396,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID186c20b24f9d() {
-var data = gvisDataMotionChartID186c20b24f9d();
+function drawChartMotionChartID186c5b7b3efd() {
+var data = gvisDataMotionChartID186c5b7b3efd();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID186c20b24f9d')
+    document.getElementById('MotionChartID186c5b7b3efd')
     );
     chart.draw(data,options);
     
@@ -427,9 +427,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID186c20b24f9d);
+callbacks.push(drawChartMotionChartID186c5b7b3efd);
 })();
-function displayChartMotionChartID186c20b24f9d() {
+function displayChartMotionChartID186c5b7b3efd() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -453,11 +453,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c20b24f9d"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c5b7b3efd"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID186c20b24f9d"
+<div id="MotionChartID186c5b7b3efd"
   style="width: 600px; height: 400px;">
 </div>
 
@@ -470,7 +470,7 @@ callbacks.shift()();
 
 ----
 ## Cumulative enrollment over all classes over time
-![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
+<img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 
 ---
@@ -479,8 +479,13 @@ callbacks.shift()();
 * Numerous students sign up for a course, but do not 
 actively participate
 * Recent MBBC 1
-  * 1% of enrolled students have taken any quiz whatsoever
-  * 25% of enrolled students have watched any video content
+  * 17K students
+  * 10K accessed the course site ever
+  * 7K watched any video ever
+  * 2K submitted any quiz
+  * 196 earned a SOA
+  * 129 signature track
+  * 128 posted to the forums
 
 --- 
 ## Some summary statistics
@@ -544,6 +549,18 @@ DA offering 1.
 
 <div align="center">
 <img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Case studies
+
+<div align="center">
+<a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
+<img src="../fig/JL.PNG" alt="Drawing" style="height: 200px;"/>
+</a>
+<a href = "https://twitter.com/ahalterman/status/425805189380308992">
+    <img src="../fig/jl2.png" alt="Drawing" style="height: 300px;"/>
+</a>
 </div>
 
 ---
