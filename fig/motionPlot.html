@@ -1,0 +1,241 @@
+<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
+<!-- Thu May 08 17:03:37 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID186c7c51466d () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "MBBC1",
+new Date(2012,8,24),
+16398,
+749,
+1,
+0 
+],
+[
+ "MBBC2",
+new Date(2013,8,30),
+10965,
+508,
+1,
+0 
+],
+[
+ "CDA",
+new Date(2012,8,24),
+50883,
+3938,
+1,
+0 
+],
+[
+ "DA",
+new Date(2013,0,22),
+101747,
+4254,
+1,
+0 
+],
+[
+ "Case",
+new Date(2013,6,22),
+19631,
+2712,
+1,
+0 
+],
+[
+ "StatReas",
+new Date(2014,0,21),
+26063,
+1068,
+1,
+0 
+],
+[
+ "fMRI",
+new Date(2014,1,24),
+23947,
+1682,
+1,
+0 
+],
+[
+ "Tools",
+new Date(2014,3,7),
+64515,
+6467,
+1,
+1 
+],
+[
+ "Rprog",
+new Date(2014,3,7),
+62433,
+2965,
+1,
+1 
+],
+[
+ "Clean",
+new Date(2014,3,7),
+33737,
+781,
+1,
+1 
+],
+[
+ "MBBC1",
+new Date(2013,3,16),
+22153,
+1427,
+2,
+0 
+],
+[
+ "MBBC2",
+new Date(2014,0,6),
+6742,
+291,
+2,
+0 
+],
+[
+ "CDA",
+new Date(2013,0,2),
+44661,
+6271,
+2,
+0 
+],
+[
+ "DA",
+new Date(2013,9,28),
+91379,
+2246,
+2,
+0 
+],
+[
+ "MBBC1",
+new Date(2013,6,29),
+18270,
+1109,
+3,
+0 
+],
+[
+ "CDA",
+new Date(2013,8,23),
+83441,
+6768,
+3,
+0 
+],
+[
+ "MBBC1",
+new Date(2013,10,18),
+18270,
+408,
+4,
+0 
+],
+[
+ "CDA",
+new Date(2014,0,6),
+65002,
+4092,
+4,
+0 
+],
+[
+ "MBBC1",
+new Date(2014,2,3),
+16454,
+196,
+5,
+0 
+] 
+];
+data.addColumn('string','class');
+data.addColumn('date','date');
+data.addColumn('number','enrollment');
+data.addColumn('number','soa');
+data.addColumn('number','offering');
+data.addColumn('number','ds');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID186c7c51466d() {
+var data = gvisDataMotionChartID186c7c51466d();
+var options = {};
+options["width"] =    600;
+options["height"] =    400;
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID186c7c51466d')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID186c7c51466d);
+})();
+function displayChartMotionChartID186c7c51466d() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c7c51466d"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID186c7c51466d"
+  style="width: 600px; height: 400px;">
+</div>
