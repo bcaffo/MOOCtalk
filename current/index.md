@@ -20,9 +20,9 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 2. A brief taxonomy and history of online educational models
 3. Massive Open Online Courses (MOOCs) 
 4. JHU Biostat involvement in Coursera
-5. Novel moving target directions of the field statistics
-6. **Data Science series** 
-7. SWIRL
+5. Novel moving target directions of the field of statistics
+6. **Data Science Specialization** 
+7. swirl
 
 ---
 ## About these slides
@@ -42,7 +42,7 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 </div>
 
 <div align="center">
-<img src="../fig/nickyC.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/nickyC.jpg" alt="Drawing" style="height: 200px;"/>
 <img src="../fig/seanKross.png" alt="Drawing" style="height: 200px;"/>
 <img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
 </div>
@@ -54,11 +54,11 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 - [Bloomberg School of Public Health](http://www.jhsph.edu)
 - [Johns Hopkins University](http://www.jhu.edu)
 - [Coursera](http://coursera.org)
-- Team SWIRL
+- Team swirl
 - Lauren and Ethan (Brian's 2013 interns)
 - Contributions from github pull requests
 - Tolerant families!
-- A half of a million intrepid self learners
+- A half of a million intrepid self-learners
 
 ---
 ## My day job(s)
@@ -96,7 +96,7 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 ---
 ## My person teaching
 
-- Biostat 751 and 2 
+- Biostat 751 and 752 
   - 16 weeks (8 x 2) of classes
   - Two 80 minute lectures per week
   - Two tests per term
