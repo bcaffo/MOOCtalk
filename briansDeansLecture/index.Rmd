@@ -57,14 +57,18 @@ this talk
 <img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
 </div>
 
----
+--- &twocol w1:50% w2:50%
 ## Plus generous contributions from the
+
+*** =left
 - [Department of Biostatistics](http://www.biostat.jhsph.edu)
 - [Center for Teaching and Learning](http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/)
 - [Bloomberg School of Public Health](http://www.jhsph.edu)
 - [Johns Hopkins University](http://www.jhu.edu)
 - [Coursera](http://coursera.org)
 - Steve, Mike, Karen, Sukon
+
+*** =right
 - Everyone at CTL
 - Everone at Multimedia 
 - Team SWIRL
@@ -277,8 +281,6 @@ cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
 ```
 
 
-
-
 ---
 ## Over time
 ```{r gv, echo = FALSE, results = 'asis'}
@@ -314,7 +316,7 @@ temp$cumSOA <- cumsum(temp$soa)
 #plot(temp$date, temp$cumE, type = "l", frame = FALSE, xlab = "Date", ylab = "Cumulative Enrollment", lwd = 4, col = "salmon")
 #lines(temp$date, 10 * temp$cumSOA, lwd = 4, col = "lightblue")
 library(ggplot2)
-qplot(temp$date, temp$cumE, geom = "path", xlab = "Date", ylab = "Cumulative Enrollment")
+ggplot() + geom_line(aes(x = temp$date, y = temp$cumE), color = "salmon", size = 3) + labs(x = "Date", y = "Cumulative Enrollment")
 ```
 
 ---
@@ -359,8 +361,8 @@ maxES <- noZero$offering[n]
 ## Signature track
 
 <div align="center">
-<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
-<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 100px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 100px;"/>
 </div>
 
 - Verification based on typing patterns (highly unique according to Coursera)
@@ -369,6 +371,8 @@ maxES <- noZero$offering[n]
 - Revenue distribution via agreement between Coursera and partner institution
 - 155 signature track for 20k students in MBBC1 V4
 - Much higher retention and completion rates for signature track
+- Between 1% and 12% Signature track rate for classes (depending on a variety of factors)
+- All of our classes are $49 for sig track
 
 --- &twocol w1:50% w2:50%
 ## Interesting fallout from doing this
@@ -478,14 +482,14 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 
 --- 
 ## Platform choices
-> - Everything done on Coursera
-> - All programming in R
-> - All lecture notes done in Slidify (common theme)
-> - All content open source
-> - Version control through git and github
-> - (Students will learn and use git)
-> - RStudio as an IDE
-> - knitr for reproducible documents and report writing
+- Everything done on Coursera
+- All programming in R
+- All lecture notes done in Slidify (common theme)
+- All content open source
+- Version control through git and github
+- (Students will learn and use git)
+- RStudio as an IDE
+- knitr for reproducible documents and report writing
 
 ---  &twocol w1:50% w2:50%
 ## Standard and non-standard stat content 

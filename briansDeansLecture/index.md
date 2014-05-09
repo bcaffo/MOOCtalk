@@ -57,14 +57,18 @@ this talk
 <img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
 </div>
 
----
+--- &twocol w1:50% w2:50%
 ## Plus generous contributions from the
+
+*** =left
 - [Department of Biostatistics](http://www.biostat.jhsph.edu)
 - [Center for Teaching and Learning](http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/)
 - [Bloomberg School of Public Health](http://www.jhsph.edu)
 - [Johns Hopkins University](http://www.jhu.edu)
 - [Coursera](http://coursera.org)
 - Steve, Mike, Karen, Sukon
+
+*** =right
 - Everyone at CTL
 - Everone at Multimedia 
 - Team SWIRL
@@ -216,19 +220,17 @@ Equipment
 
 
 
-
-
 ---
 ## Over time
-<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Thu May 08 17:45:17 2014 -->
+<!-- MotionChart generated in R 3.0.3 by googleVis 0.5.2 package -->
+<!-- Thu May 08 21:37:41 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID186c5b7b3efd () {
+function gvisDataMotionChartIDf046e7189f () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -396,14 +398,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID186c5b7b3efd() {
-var data = gvisDataMotionChartID186c5b7b3efd();
+function drawChartMotionChartIDf046e7189f() {
+var data = gvisDataMotionChartIDf046e7189f();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID186c5b7b3efd')
+    document.getElementById('MotionChartIDf046e7189f')
     );
     chart.draw(data,options);
     
@@ -427,9 +429,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID186c5b7b3efd);
+callbacks.push(drawChartMotionChartIDf046e7189f);
 })();
-function displayChartMotionChartID186c5b7b3efd() {
+function displayChartMotionChartIDf046e7189f() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -453,11 +455,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c5b7b3efd"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDf046e7189f"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID186c5b7b3efd"
+<div id="MotionChartIDf046e7189f"
   style="width: 600px; height: 400px;">
 </div>
 
@@ -489,23 +491,98 @@ actively participate
 
 --- 
 ## Some summary statistics
-* Classes considered are MBBC1, MBBC2, CDA, DA, Case, StatReas, fMRI, Tools, Rprog, Clean
-* A total of 776,691 students enrolled  
-* 19 class offerings
+* Classes considered are 
+
+```
+
+Error in unique(myData$class) : lazy-load database 'P' is corrupt
+
+```
+
+
+* A total of 
+
+```
+
+Error in prettyNum(sum(myData$enrollment), big.mark = ",", scientific = FALSE) : 
+  lazy-load database 'P' is corrupt
+
+```
+
+ students enrolled  
+* 
+
+```
+
+Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
+
+```
+
+ class offerings
 
 
 * Average of 40,878 students per class.
-* Minimum class size of 6,742 for class
-MBBC2 offering 2
-* Maximum class size of 101,747 for class
-DA offering 1.
+* Minimum class size of 
+
+```
+
+Error in prettyNum(minE, big.mark = ",", scientific = FALSE) : 
+  lazy-load database 'P' is corrupt
+
+```
+
+ for class
+
+
+```
+
+Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
+
+```
+
+ offering 
+
+```
+
+Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
+
+```
+
+
+* Maximum class size of 
+
+```
+
+Error in prettyNum(maxE, big.mark = ",", scienfific = FALSE) : 
+  lazy-load database 'P' is corrupt
+
+```
+
+ for class
+
+
+```
+
+Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
+
+```
+
+ offering 
+
+```
+
+Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
+
+```
+
+.
 
 ---
 ## Signature track
 
 <div align="center">
-<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
-<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 100px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 100px;"/>
 </div>
 
 - Verification based on typing patterns (highly unique according to Coursera)
@@ -514,6 +591,8 @@ DA offering 1.
 - Revenue distribution via agreement between Coursera and partner institution
 - 155 signature track for 20k students in MBBC1 V4
 - Much higher retention and completion rates for signature track
+- Between 1% and 12% Signature track rate for classes (depending on a variety of factors)
+- All of our classes are $49 for sig track
 
 --- &twocol w1:50% w2:50%
 ## Interesting fallout from doing this
@@ -615,14 +694,14 @@ DA offering 1.
 
 --- 
 ## Platform choices
-> - Everything done on Coursera
-> - All programming in R
-> - All lecture notes done in Slidify (common theme)
-> - All content open source
-> - Version control through git and github
-> - (Students will learn and use git)
-> - RStudio as an IDE
-> - knitr for reproducible documents and report writing
+- Everything done on Coursera
+- All programming in R
+- All lecture notes done in Slidify (common theme)
+- All content open source
+- Version control through git and github
+- (Students will learn and use git)
+- RStudio as an IDE
+- knitr for reproducible documents and report writing
 
 ---  &twocol w1:50% w2:50%
 ## Standard and non-standard stat content 
