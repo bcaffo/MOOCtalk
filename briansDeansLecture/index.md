@@ -26,6 +26,8 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 7. SWIRL
 
 ---
+<a href="https://github.com/bcaffo/MOOCtalk"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
 ## About these slides
 * HTML5 using (customized) [Google io2012 style](https://code.google.com/p/io-2012-slides/)
 * Created using [slidify](http://slidify.org)
@@ -35,11 +37,18 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 
 ---
 ## Thanks to the dean
-For taking time out of his busy schedule of cracking down on Delta Tau Chi for
-this talk
-
 <div align = "center">
 <img src="../fig/Animal-House-21.jpg">
+</div>
+>- For taking time out of his busy schedule of cracking down on Delta Tau Chi for
+this talk
+>- (Thanks for tenure)
+>- (I'll really really try not to abuse it)
+
+---
+## You know you've made it when
+<div align = "center">
+<img src="../fig/tbc.PNG">
 </div>
 
 ---
@@ -75,7 +84,7 @@ this talk
 - Lauren and Ethan (Brian's 2013 interns)
 - Contributions from github pull requests
 - Tolerant families!
-- A half of a million intrepid self learners
+- 800 thousand intrepid self learners
 
 ---
 ## My day job(s)
@@ -161,13 +170,17 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/platformVideos.png" alt="Drawing" style="height: 200;"/>
 </div>
 
---- 
-## Example videos (on YouTube)
+--- &twocol w1:50% w2:50%
+
+*** =left
+## Example videos 
+### (on YouTube)
 
 - [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
 - [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
 
-Equipment
+*** =right
+## Equipment
 
 - [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
 - [Yeti usb microphone](http://bluemic.com/yeti/) 
@@ -187,15 +200,15 @@ Equipment
 ---
 ## Coursera platform, peer grading
 <div align=center>
-<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 250;"/>
 </div>
 
 ---
 ## Coursera platform, forums
-### Main source for student interaction
+### (Oh internets, how I love thee)
 (Forums can be brutal)
 <div align=center>
-<img src="../fig/platformForums.png" alt="Drawing" style="height: 500px;"/>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 400px;"/>
 </div>
 
 --- 
@@ -476,7 +489,7 @@ callbacks.shift()();
 
 
 ---
-## Important consideration about completion rates
+## Completion rates
 * Students participate in MOOCs for a variety of reasons
 * Numerous students sign up for a course, but do not 
 actively participate
@@ -656,9 +669,18 @@ DA offering 1
 ## Shiny is pretty neat
 
 <div align=center>
-<img src="../fig/shiny01.png" alt="Drawing" style="height: 500px;"/>
+<img src="../fig/shiny01.png" alt="Drawing" style="height: 300px;"/>
 </div>
+* [Shiny example John Muschelli's app](https://muschellij2.shinyapps.io/ENAR_2014/)
+* [Rawan Allozi's algorithm](http://spark.rstudio.com/bcaffo/pta/)
+* Rstudio is giving free hosted shiny apps for students in the concentration!
 
+---
+## Capstone industry partnerships
+* Current negotiations are ongoing for exciting capstone projects
+* Company donates the data to the Specialization that the students analyze for their project
+    * Prepare video or documentation outlining the problem
+* University MOUs being finalized with some of the most exciting tech companies
 
 ---
 <br>
@@ -733,6 +755,13 @@ DA offering 1
 ---
 Thanks!
 =========
+* Jeff, Roger, Nick, Sean, Ira
+* Johns Hopkins
+* Bloomberg School of Public Health
+* Department of Biostatistics
+* SMART group
+    * Ciprian, Martin, Ani, Vadim
+* Students
 
 ---
 ## My peeps
