@@ -158,7 +158,7 @@ Primary characteristics are open access, low cost, scalable, online
 ---
 ## Coursera platform, videos
 <div align=center>
-<img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/platformVideos.png" alt="Drawing" style="height: 200;"/>
 </div>
 
 --- 
@@ -491,91 +491,16 @@ actively participate
 
 --- 
 ## Some summary statistics
-* Classes considered are 
-
-```
-
-Error in unique(myData$class) : lazy-load database 'P' is corrupt
-
-```
+* Classes considered are MBBC1, MBBC2, CDA, DA, Case, StatReas, fMRI, Tools, Rprog, Clean
+* A total of 776,691 students enrolled  
+* 19 class offerings
 
 
-* A total of 
-
-```
-
-Error in prettyNum(sum(myData$enrollment), big.mark = ",", scientific = FALSE) : 
-  lazy-load database 'P' is corrupt
-
-```
-
- students enrolled  
-* 
-
-```
-
-Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
-
-```
-
- class offerings
-
-
-* Average of 40,878 students per class.
-* Minimum class size of 
-
-```
-
-Error in prettyNum(minE, big.mark = ",", scientific = FALSE) : 
-  lazy-load database 'P' is corrupt
-
-```
-
- for class
-
-
-```
-
-Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
-
-```
-
- offering 
-
-```
-
-Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
-
-```
-
-
-* Maximum class size of 
-
-```
-
-Error in prettyNum(maxE, big.mark = ",", scienfific = FALSE) : 
-  lazy-load database 'P' is corrupt
-
-```
-
- for class
-
-
-```
-
-Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
-
-```
-
- offering 
-
-```
-
-Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
-
-```
-
-.
+* Average of 40,878 students per class
+* Minimum class size of 6,742 for class
+MBBC2 offering 2
+* Maximum class size of 101,747 for class
+DA offering 1
 
 ---
 ## Signature track
@@ -600,7 +525,7 @@ Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
 *** =left
 - Jeff's class was listed as one of the top 10 most enrolled Coursera classes
   - Roger's class has since eclipsed it in cumulative enrollment
-- Brian and Roger have run signature track ($49 per student)
+- Brian, Roger, Martin, John have run signature track ($49 per student)
 - Brian's class featured on the front page of the Washington Post 
 - Roger interviewed on Anderson Cooper and NPR
 
@@ -691,6 +616,8 @@ Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
 - Quizzes, in video quizzes and peer assessment projects
 - Run monthly after initial rollout
 - All content open source
+- Toolbox, R Programming and Getting and Cleaning Data have all run
+(enrollments of 64k, 62, 34k resp)
 
 --- 
 ## Platform choices
@@ -718,7 +645,7 @@ Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
 *** =right
 - Reproducible research, report generation
 - Presentations
-- Interactive graphics (rgl, rCharts, shiny, manipulate)
+- Interactive graphics (rCharts, shiny, manipulate, googleVis)
 - Data munging, obtaining data
 - Programming
 - Plotting (ggplot2, rCharts, R base graphics)
@@ -726,77 +653,20 @@ Error in eval(expr, envir, enclos) : lazy-load database 'P' is corrupt
 
 
 ---
-## Statistics With Interactive R Learning
-### [http://swirlstats.com](http://swirlstats.com)
+## Shiny is pretty neat
 
-<div align="center">
-<img src = "../fig/swirl.png" alt="Drawing" style="height: 300px;"/>
+<div align=center>
+<img src="../fig/shiny01.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
-
----
-## In the R console
-<div align="center">
-<img src = "../fig/swirl01.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
-
----
-## Class selection
-<div align="center">
-<img src = "../fig/swirl02.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Getting started
-<div align="center">
-<img src = "../fig/swirl03.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Feedback
-<div align="center">
-<img src = "../fig/swirl04.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Feedback
-<div align="center">
-<img src = "../fig/swirl05.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Feedback
-<div align="center">
-<img src = "../fig/swirl06.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Getting help
-<div align="center">
-<img src = "../fig/swirl07.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Play mode
-<div align="center">
-<img src = "../fig/swirl08.png" alt="Drawing" style="height: 500px;"/>
-</div>
-
----
-## Starting up again
-
-<div align="center">
-<img src = "../fig/swirl09.png" alt="Drawing" style="height: 100px;"/>
-</div>
-
----
-## Skipping stuff
-<div align="center">
-<img src = "../fig/swirl10.png" alt="Drawing" style="height: 500px;"/>
-</div>
 
 ---
 Thanks!
 =========
+
+---
+## My peeps
+<div align=center>
+<img src="../fig/theGirls.jpg" style="height: 400px;"/>
+</div>
 
