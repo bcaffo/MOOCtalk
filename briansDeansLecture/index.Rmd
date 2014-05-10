@@ -524,6 +524,76 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 
 
 ---
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
+</div>
+
+---
+## A friendlier way to learn R...
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 11.58.39.png" style="height: 500px;"/>
+</div>
+
+---
+## Self-paced and interactive
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.02.43.png" style="height: 500px;"/>
+</div>
+
+---
+## Learn R and stats, together
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.06.28.png" style="height: 500px;"/>
+</div>
+
+---
+## swirl + Coursera
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.16.23.png" style="height: 500px;"/>
+</div>
+
+---
+## Get Coursera credit, automatically
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.17.26.png" style="height: 500px;"/>
+</div>
+
+---
+## Make your own interactive content
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
+</div>
+
+---
+## swirlstats.com
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
+</div>
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
+</div>
+
+
+---
 Thanks!
 =========
 
