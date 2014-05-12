@@ -42,8 +42,6 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 </div>
 >- For taking time out of his busy schedule of cracking down on Delta Tau Chi for
 this talk
->- (Thanks for tenure)
->- (I'll really really try not to abuse it)
 
 ---
 ## You know you've made it when
@@ -205,7 +203,7 @@ Primary characteristics are open access, low cost, scalable, online
 
 ---
 ## Coursera platform, forums
-### (Oh internets, how I love thee)
+### You're on the internets
 (Forums can be brutal)
 <div align=center>
 <img src="../fig/platformForums.png" alt="Drawing" style="height: 400px;"/>
@@ -544,6 +542,13 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 * Company donates the data to the Specialization that the students analyze for their project
     * Prepare video or documentation outlining the problem
 * University MOUs being finalized with some of the most exciting tech companies
+
+---
+## Cost comparison with other programs
+<div align="center">
+<img src = "../fig/dscompare.png">
+</div>
+
 
 ---
 <br>
