@@ -32,7 +32,7 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 * HTML5 using (customized) [Google io2012 style](https://code.google.com/p/io-2012-slides/)
 * Created using [slidify](http://slidify.org)
 * Appear on github at (https://github.com/bcaffo/MOOCtalk) fork if you'd like
-* Jointly written with my collaborators Jeff Leek and Roger Peng
+* Jointly written with my collaborators Jeff, Roger, Nick and Sean
 * CC licensed by-nc-sa
 
 ---
