@@ -23,7 +23,7 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 4. JHU Biostat involvement in Coursera
 5. Novel moving target directions of the field statistics
 6. **Data Science series** 
-7. SWIRL
+7. swirl
 
 ---
 <a href="https://github.com/bcaffo/MOOCtalk"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
@@ -286,7 +286,7 @@ cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ---
 ## Statements of accomplishment by offering
 ```{r soa, echo = FALSE, results = 'asis'}
-n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
+n2 <- nPlot(soa ~ class, group = "offering", data = myData[myData$ds == 0,], type = "multiBarChart")
 n2$save('../fig/classPlot3.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
 ```
@@ -487,11 +487,11 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 
 *** =right
 - Each class is four weeks
-- Quizzes, in video quizzes and peer assessment projects
+- Quizzes, in video quizzes, programming assignments and peer assessment projects
 - Run monthly after initial rollout
 - All content open source
 - Toolbox, R Programming and Getting and Cleaning Data have all run
-(enrollments of 64k, 62, 34k resp)
+(enrollments of 64k, 62k, 34k resp)
 
 --- 
 ## Platform choices
@@ -636,4 +636,7 @@ Thanks!
 <div align=center>
 <img src="../fig/theGirls.jpg" style="height: 400px;"/>
 </div>
+
+---
+## Version test
 

@@ -23,7 +23,7 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 4. JHU Biostat involvement in Coursera
 5. Novel moving target directions of the field statistics
 6. **Data Science series** 
-7. SWIRL
+7. swirl
 
 ---
 <a href="https://github.com/bcaffo/MOOCtalk"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
@@ -233,15 +233,15 @@ Primary characteristics are open access, low cost, scalable, online
 
 ---
 ## Over time
-<!-- MotionChart generated in R 3.0.3 by googleVis 0.5.2 package -->
-<!-- Thu May 08 21:37:41 2014 -->
+<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
+<!-- Thu May 08 17:45:17 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartIDf046e7189f () {
+function gvisDataMotionChartID186c5b7b3efd () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -409,14 +409,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartIDf046e7189f() {
-var data = gvisDataMotionChartIDf046e7189f();
+function drawChartMotionChartID186c5b7b3efd() {
+var data = gvisDataMotionChartID186c5b7b3efd();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartIDf046e7189f')
+    document.getElementById('MotionChartID186c5b7b3efd')
     );
     chart.draw(data,options);
     
@@ -440,9 +440,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartIDf046e7189f);
+callbacks.push(drawChartMotionChartID186c5b7b3efd);
 })();
-function displayChartMotionChartIDf046e7189f() {
+function displayChartMotionChartID186c5b7b3efd() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -466,11 +466,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDf046e7189f"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c5b7b3efd"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartIDf046e7189f"
+<div id="MotionChartID186c5b7b3efd"
   style="width: 600px; height: 400px;">
 </div>
 
@@ -624,11 +624,11 @@ DA offering 1
 
 *** =right
 - Each class is four weeks
-- Quizzes, in video quizzes and peer assessment projects
+- Quizzes, in video quizzes, programming assignments and peer assessment projects
 - Run monthly after initial rollout
 - All content open source
 - Toolbox, R Programming and Getting and Cleaning Data have all run
-(enrollments of 64k, 62, 34k resp)
+(enrollments of 64k, 62k, 34k resp)
 
 --- 
 ## Platform choices
@@ -773,4 +773,7 @@ Thanks!
 <div align=center>
 <img src="../fig/theGirls.jpg" style="height: 400px;"/>
 </div>
+
+---
+## Version test
 
