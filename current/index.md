@@ -70,19 +70,13 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 - 800 thousand intrepid self learners
 
 ---
-## My day job(s)
+## What I supposedly do during the day
 ### SMART (www.smart-stats.org)
 <div align="center">
-<img src="../fig/smart.png" alt="Drawing" style="width: 700px;"/>
+<img src="../fig/smart.png" alt="Drawing" style="width: 500px;"/>
+<img src="../fig/defaultMode2.png" alt="Drawing" style="width: 400px;"/></div>
 </div>
 
----
-## Connectomics
-### resting state fMRI
-<div align="center"><img src="../fig/defaultMode1.png" alt="Drawing" style="width: 600px;"/></div>
-<br>
-<div align="center">
-<img src="../fig/defaultMode2.png" alt="Drawing" style="width: 600px;"/></div>
 
 --- &twocol w1:50% w2:50%
 ## (Incomplete) characteristics of educational systems
@@ -153,26 +147,6 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/platformVideos.png" alt="Drawing" style="height: 200;"/>
 </div>
 
---- &twocol w1:50% w2:50%
-
-*** =left
-## Example videos 
-### (on YouTube)
-
-- [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
-- [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
-
-*** =right
-## Equipment
-
-- [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
-- [Yeti usb microphone](http://bluemic.com/yeti/) 
-- [Camtasia](http://www.techsmith.com/camtasia.html)
-- [Note 2](http://www.samsung.com/global/microsite/galaxynote/note2/index.html?type=find)
-- [Lecture notes](https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes)
-- [ffmpeg](http://www.ffmpeg.org/)
-
-<img border="0" src="http://cdn.bluemic.com/images/yeti/main-right.jpg" alt="Pulpit rock" width="100" >
 
 ---
 ## Coursera platform, quizzes
@@ -205,7 +179,7 @@ Primary characteristics are open access, low cost, scalable, online
 <img src="../fig/data_B-02.jpg" alt="Drawing"/>
 </div>
 
-Since then
+## Since then
 - Scott Zeger introduced class *Cased Based Introduction to Statistics*
 - Brian introducted *MBBC2*
 - Martin Lindquist introduced *Statistical Analysis of fMRI Data*
@@ -472,16 +446,6 @@ callbacks.shift()();
 
 
 
-----
-## Cumulative enrollment over all classes over time
-
-```
-## Need help? Try the ggplot2 mailing list: http://groups.google.com/group/ggplot2.
-```
-
-<img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
-
-
 ---
 ## Completion rates
 * Students participate in MOOCs for a variety of reasons
@@ -527,7 +491,7 @@ DA offering 1
 - All of our classes are $49 for sig track
 
 --- &twocol w1:50% w2:50%
-## Interesting visibility fallout from doing this
+## Interesting fallout from doing this
 
 *** =left
 ### Positive things
@@ -544,6 +508,8 @@ DA offering 1
 - Uprisings
 - Negative reviews (internal and external)
 - Complaints
+- No internal mechanisms for support
+- Fatigue
 
 ---
 ## MOOCs by university
@@ -562,32 +528,28 @@ DA offering 1
 ## Case studies
 
 <div align="center">
-<img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
+<img src="../fig/email2.png" alt="Drawing" style="height: 175px;"/>
 </div>
 
----
-## Case studies
-
+<br>
 <div align="center">
 <a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
-<img src="../fig/JL.PNG" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/JL.PNG" alt="Drawing" style="height: 175px;"/>
 </a>
 <a href = "https://twitter.com/ahalterman/status/425805189380308992">
-    <img src="../fig/jl2.png" alt="Drawing" style="height: 300px;"/>
+    <img src="../fig/jl2.png" alt="Drawing" style="height: 250px;"/>
 </a>
 </div>
 
 ---
-## Statistics, big data, data science
+### Statistics, big data, data science / cost of training the workforce
 
 <div align=center>
-<img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 200px;"/>
 </div>
-
----
-## Complimentary problems
+<br><br>
 <div align=center>
-<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 200px;"/>
 </div>
 
 ---
@@ -655,34 +617,30 @@ DA offering 1
 *** =right
 - Reproducible research, report generation
 - Presentations
-- Interactive graphics (rCharts, shiny, manipulate, googleVis)
-- Data munging, obtaining data
-- Programming
-- Plotting (ggplot2, rCharts, R base graphics)
-- Capstone project
+- Data cleaning, obtaining data
+- R Programming
+- Plotting, interactive graphics 
+- Shiny, yhat
 
+[Shiny example John Muschelli's app](https://muschellij2.shinyapps.io/ENAR_2014/)
 
----
-## Shiny is pretty neat
+[Rawan Allozi's algorithm](http://spark.rstudio.com/bcaffo/pta/)
 
-<div align=center>
-<img src="../fig/shiny01.png" alt="Drawing" style="height: 300px;"/>
-</div>
-* [Shiny example John Muschelli's app](https://muschellij2.shinyapps.io/ENAR_2014/)
-* [Rawan Allozi's algorithm](http://spark.rstudio.com/bcaffo/pta/)
-* Rstudio is giving free hosted shiny apps for students in the concentration!
+Rstudio is giving free hosted shiny apps for students in the concentration!
+
 
 ---
 ## Cost comparison with other programs
 <div align="center">
-<img src = "../fig/dscompare.png">
+<img src = "../fig/dscompare.png" style="height: 400px;"/>
 </div>
 
 
 ---
-<br>
+## swirlstats.com
+
 <div align="center">
-<img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
 </div>
 
 ---
@@ -727,14 +685,10 @@ DA offering 1
 <img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
 </div>
 
----
-## swirlstats.com
-
-<div align="center">
-<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
-</div>
 
 ---
+Thanks!
+========
 
 <br>
 <br>
@@ -744,9 +698,7 @@ DA offering 1
 <br>
 <div align="center">
 <img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
-</div>
+    </div>
 
 
----
-Thanks!
 
