@@ -233,15 +233,15 @@ Primary characteristics are open access, low cost, scalable, online
 
 ---
 ## Over time
-<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Thu May 08 17:45:17 2014 -->
+<!-- MotionChart generated in R 3.0.3 by googleVis 0.5.2 package -->
+<!-- Thu May 08 21:37:41 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID186c5b7b3efd () {
+function gvisDataMotionChartIDf046e7189f () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -409,14 +409,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID186c5b7b3efd() {
-var data = gvisDataMotionChartID186c5b7b3efd();
+function drawChartMotionChartIDf046e7189f() {
+var data = gvisDataMotionChartIDf046e7189f();
 var options = {};
 options["width"] =    600;
 options["height"] =    400;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID186c5b7b3efd')
+    document.getElementById('MotionChartIDf046e7189f')
     );
     chart.draw(data,options);
     
@@ -440,9 +440,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID186c5b7b3efd);
+callbacks.push(drawChartMotionChartIDf046e7189f);
 })();
-function displayChartMotionChartID186c5b7b3efd() {
+function displayChartMotionChartIDf046e7189f() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -466,11 +466,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID186c5b7b3efd"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDf046e7189f"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID186c5b7b3efd"
+<div id="MotionChartIDf046e7189f"
   style="width: 600px; height: 400px;">
 </div>
 

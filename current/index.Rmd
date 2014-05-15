@@ -14,17 +14,20 @@ widgets     : [mathjax, quiz, bootstrap]
 mode        : selfcontained # {standalone, draft}
 ext_widgets : {rCharts: [libraries/nvd3]}
 ---
+
 ## Teaching statistics for the future
 ### Outline of the talk
-1. Who the heck am I?
+1. What I supposedly do during the day
 2. A brief taxonomy and history of online educational models
 3. Massive Open Online Courses (MOOCs) 
 4. JHU Biostat involvement in Coursera
-5. Novel moving target directions of the field of statistics
-6. **Data Science Specialization** 
-7. swirl
+5. Novel moving target directions of the field statistics
+6. **Data Science series** 
+7. SWIRL
 
 ---
+<a href="https://github.com/bcaffo/MOOCtalk"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
 ## About these slides
 * HTML5 using (customized) [Google io2012 style](https://code.google.com/p/io-2012-slides/)
 * Created using [slidify](http://slidify.org)
@@ -47,18 +50,24 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 <img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
 </div>
 
----
+--- &twocol w1:50% w2:50%
 ## Plus generous contributions from the
+
+*** =left
 - [Department of Biostatistics](http://www.biostat.jhsph.edu)
 - [Center for Teaching and Learning](http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/)
 - [Bloomberg School of Public Health](http://www.jhsph.edu)
 - [Johns Hopkins University](http://www.jhu.edu)
 - [Coursera](http://coursera.org)
-- Team swirl
+- Steve, Mike, Karen, Sukon
+
+*** =right
+- Multimedia 
+- Team SWIRL
 - Lauren and Ethan (Brian's 2013 interns)
 - Contributions from github pull requests
 - Tolerant families!
-- A half of a million intrepid self-learners
+- 800 thousand intrepid self learners
 
 ---
 ## My day job(s)
@@ -74,37 +83,6 @@ ext_widgets : {rCharts: [libraries/nvd3]}
 <br>
 <div align="center">
 <img src="../fig/defaultMode2.png" alt="Drawing" style="width: 600px;"/></div>
-
-
----
-## JHU Biostat onsite degree programs
-
-<img src="../fig/header-prospective-students.jpg" alt="Drawing" style="width: 250px;"/>
-
-1. PhD program 
-  - Around 50 students with around 10 matriculating per year.
-  - Around 200 applications per year.
-2. ScM program
-  - Around 25 students with around 10 matriculating per year.
-  - Around 50 applications per year. 
-3. Concurrent MHS program
-  - Typically around 10 students with around 2 matriculating per year.
-  - 2 - 4 applications per year 
-4. Standalone MHS program
-
-
----
-## My person teaching
-
-- Biostat 751 and 752 
-  - 16 weeks (8 x 2) of classes
-  - Two 80 minute lectures per week
-  - Two tests per term
-  - Four homeworks per term
-  - One TA
-- About 10 students
-- Covers intro methods and  (mostly) linear models at the doctoral level
-- Recently I've introduced the flipped classroom model
 
 --- &twocol w1:50% w2:50%
 ## (Incomplete) characteristics of educational systems
@@ -172,16 +150,20 @@ Primary characteristics are open access, low cost, scalable, online
 ---
 ## Coursera platform, videos
 <div align=center>
-<img src="../fig/platformVideos.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/platformVideos.png" alt="Drawing" style="height: 200;"/>
 </div>
 
---- 
-## Example videos (on YouTube)
+--- &twocol w1:50% w2:50%
+
+*** =left
+## Example videos 
+### (on YouTube)
 
 - [Example from data science inference](https://www.youtube.com/watch?v=ZD7kR4QLFnE#t=269)
 - [Ad hoc phone recording](https://www.youtube.com/watch?v=ZeS-ELmY7Fk)
 
-Equipment
+*** =right
+## Equipment
 
 - [Cintiq 22inch display](http://www.wacom.com/en/us/creative/cintiq-22-hd)
 - [Yeti usb microphone](http://bluemic.com/yeti/) 
@@ -192,8 +174,6 @@ Equipment
 
 <img border="0" src="http://cdn.bluemic.com/images/yeti/main-right.jpg" alt="Pulpit rock" width="100" >
 
-
-
 ---
 ## Coursera platform, quizzes
 <div align=center>
@@ -203,15 +183,15 @@ Equipment
 ---
 ## Coursera platform, peer grading
 <div align=center>
-<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 300;"/>
+<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 250;"/>
 </div>
 
 ---
 ## Coursera platform, forums
-### Main source for student interaction
+### You're on the internets
 (Forums can be brutal)
 <div align=center>
-<img src="../fig/platformForums.png" alt="Drawing" style="height: 500px;"/>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 400px;"/>
 </div>
 
 --- 
@@ -225,52 +205,92 @@ Equipment
 <img src="../fig/data_B-02.jpg" alt="Drawing"/>
 </div>
 
+Since then
+- Scott Zeger introduced class *Cased Based Introduction to Statistics*
+- Brian introducted *MBBC2*
+- Martin Lindquist introduced *Statistical Analysis of fMRI Data*
+- John McGready introduced *Statistical Reasoning for Public Health*
+
 ---
 ## Enrollments by class and offering
-```{r, echo = FALSE, results = 'asis'}
+```{r dataLoad, echo = FALSE, results = 'asis'}
 require(rCharts)
 myData <- data.frame(
   enrollment = c(
-    16398, 22153, 18270, 18270, #MBBC1
-    10965,  6742,     0,     0, #MBBC2
-    50883, 44661, 83441, 65002, #CDA
-    101747, 91379,  0, 0, #DA
-    19631, 0, 0, 0), #Case based 
+    16398, 22153, 18270, 18270, 16454, #MBBC1
+    10965,  6742,     0,     0, 0, #MBBC2
+    50883, 44661, 83441, 65002, 0, #CDA
+    101747, 91379,  0, 0, 0,#DA
+    19631, 0, 0, 0, 0, #Case based 
+    26063, 0, 0, 0, 0, #stat reasoning
+    23947, 0, 0, 0, 0, #, FMRI
+    64515, 0, 0, 0, 0, #Toolbox
+    62433, 0, 0, 0, 0, 
+    33737, 0, 0, 0, 0 
+    ),
   date = c(
-    "9/24/12", "4/16/13", "7/29/13", "11/18/13", 
-    "9/30/13", "1/6/14", NA, NA,
-    "9/24/12", "1/2/13", "9/23/13", "1/6/14",
-    "1/22/13", "10/28/13", NA, NA,
-    "7/22/13", NA, NA, NA),
+    "9/24/12", "4/16/13", "7/29/13", "11/18/13", "3/3/14",
+    "9/30/13", "1/6/14", NA, NA, NA,
+    "9/24/12", "1/2/13", "9/23/13", "1/6/14", NA, 
+    "1/22/13", "10/28/13", NA, NA, NA,
+    "7/22/13", NA, NA, NA, NA,
+    "1/21/14", NA, NA, NA, NA,
+    "2/24/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA,
+     "4/7/14", NA, NA, NA, NA
+    ),
   soa = c(
-     749, 1427, 1109,  408,
-     508,  291,    0,    0,
-    3938, 6271, 6768, 4092, 
-    4254, 2246,    0,    0, 
-    2712,    0,    0,    0
+     749, 1427, 1109,  408, 196, 
+     508,  291,    0,    0,   0,
+    3938, 6271, 6768, 4092,   0,
+    4254, 2246,    0,    0,   0,
+    2712,    0,    0,    0,   0,
+    1068,    0,    0,    0,   0,  
+    1682,    0,    0,    0,   0,
+    6467,    0,    0,    0,   0,
+    2965,    0,    0,    0,   0,
+     781,    0,    0,    0,   0
     ),    
   class = c(
-    rep("MBBC1", 4), 
-    rep("MBBC2", 4), 
-    rep("CDA", 4),
-    rep("DA", 4),
-    rep("Case", 4)
+    rep("MBBC1", 5), 
+    rep("MBBC2", 5), 
+    rep("CDA", 5),
+    rep("DA", 5),
+    rep("Case", 5),
+    rep("StatReas", 5),
+    rep("fMRI", 5),
+    rep("Tools", 5),
+    rep("Rprog", 5),
+    rep("Clean", 5)
   ),
-  offering = rep(1 : 4, 5)
+  offering = rep(1 : 5, 10),
+  ds = rep(c(rep(0, 7), rep(1, 3)), rep(5, 10)) 
 )
 
 myData <- myData[order(myData$offering),]
-n1 <- nPlot(enrollment ~ class, group = "offering", data = myData, type = "multiBarChart")
+n1 <- nPlot(enrollment ~ class, group = "offering", data = myData[myData$ds == 0,], type = "multiBarChart")
 n1$save('../fig/classPlot2.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
 ```
 
 ---
 ## Statements of accomplishment by offering
-```{r, echo = FALSE, results = 'asis'}
+```{r soa, echo = FALSE, results = 'asis'}
 n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
 n2$save('../fig/classPlot3.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
+```
+
+
+---
+## Over time
+```{r gv, echo = FALSE, results = 'asis'}
+suppressPackageStartupMessages(library(googleVis))
+temp <- myData[!is.na(myData$date),]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+motion <- gvisMotionChart(temp, idvar = "class", timevar = "date", options=list(width=600, height=400))
+print(motion, "chart")
 ```
 
 ---
@@ -286,27 +306,34 @@ m1$save('../fig/classPlot5.html', cdn = TRUE)
 cat('<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>')
 ```
 
----
-## Over time CDA
-```{r, echo = FALSE, results = 'asis'}
-temp <- myData[myData$class == "CDA",]
+
+----
+## Cumulative enrollment over all classes over time
+```{r, echo = FALSE, fig.align = 'center'}
+temp <- myData[!is.na(myData$date),]
 temp$date <- as.Date(temp$date, format = "%m/%d/%y")
-temp$date <- format(temp$date, "%Y-%m-%d")
-temp$soa10 <- temp$soa * 10
-m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
-m1$set(pointSize = 10, lineWidth = 5)
-m1$save('../fig/classPlot4.html', cdn = TRUE)
-cat('<iframe src="../fig/classPlot4.html" width=100%, height=600></iframe>')
+temp <- temp[order(temp$date),]
+temp$cumE <- cumsum(temp$enrollment)
+temp$cumSOA <- cumsum(temp$soa)
+#plot(temp$date, temp$cumE, type = "l", frame = FALSE, xlab = "Date", ylab = "Cumulative Enrollment", lwd = 4, col = "salmon")
+#lines(temp$date, 10 * temp$cumSOA, lwd = 4, col = "lightblue")
+library(ggplot2)
+ggplot() + geom_line(aes(x = temp$date, y = temp$cumE), color = "salmon", size = 3) + labs(x = "Date", y = "Cumulative Enrollment")
 ```
 
 ---
-## Important consideration about completion rates
+## Completion rates
 * Students participate in MOOCs for a variety of reasons
 * Numerous students sign up for a course, but do not 
 actively participate
-* Current (ongoing) MBBC 1
-  * 1% of enrolled students have taken any quiz whatsoever
-  * 25% of enrolled students have watched any video content
+* Recent MBBC 1
+  * 17K students
+  * 10K accessed the course site ever
+  * 7K watched any video ever
+  * 2K submitted any quiz
+  * 196 earned a SOA
+  * 129 signature track
+  * 128 posted to the forums
 
 --- 
 ## Some summary statistics
@@ -326,19 +353,18 @@ maxE <- noZero$enrollment[n]
 maxEC <- noZero$class[n]
 maxES <- noZero$offering[n]
 ``` 
- * Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
+* Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class
 * Minimum class size of `r prettyNum(minE, big.mark = ',', scientific = FALSE)` for class
 `r minEC` offering `r minES`
 * Maximum class size of `r prettyNum(maxE, big.mark = ',', scienfific = FALSE)` for class
-`r maxEC` offering `r maxES`.
-
+`r maxEC` offering `r maxES`
 
 ---
 ## Signature track
 
 <div align="center">
-<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
-<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 100px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 100px;"/>
 </div>
 
 - Verification based on typing patterns (highly unique according to Coursera)
@@ -347,22 +373,27 @@ maxES <- noZero$offering[n]
 - Revenue distribution via agreement between Coursera and partner institution
 - 155 signature track for 20k students in MBBC1 V4
 - Much higher retention and completion rates for signature track
+- Between 1% and 12% Signature track rate for classes (depending on a variety of factors)
+- All of our classes are $49 for sig track
 
 --- &twocol w1:50% w2:50%
-## Interesting fallout from doing this
+## Interesting visibility fallout from doing this
 
 *** =left
+### Positive things
 - Jeff's class was listed as one of the top 10 most enrolled Coursera classes
   - Roger's class has since eclipsed it in cumulative enrollment
-- Brian and Roger have run signature track ($49 per student)
+- Brian, Roger, Martin, John have run signature track ($49 per student)
 - Brian's class featured on the front page of the Washington Post 
 - Roger interviewed on Anderson Cooper and NPR
+- Increase in PhD applications, many citing the Coursera efforts
 
 *** =right
-- Scott Zeger introduced class *Cased Based Introduction to Statistics*
-- Brian introducted *MBBC2*
-- Martin Lindquist introduced *Statistical Analysis of fMRI Data*
-- John McGready introduced *Statistical Reasoning for Public Health*
+### Negative things
+- Lots of complaining on the forums
+- Uprisings
+- Negative reviews (internal and external)
+- Complaints
 
 ---
 ## MOOCs by university
@@ -390,6 +421,18 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 
 <div align="center">
 <img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Case studies
+
+<div align="center">
+<a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
+<img src="../fig/JL.PNG" alt="Drawing" style="height: 200px;"/>
+</a>
+<a href = "https://twitter.com/ahalterman/status/425805189380308992">
+    <img src="../fig/jl2.png" alt="Drawing" style="height: 300px;"/>
+</a>
 </div>
 
 ---
@@ -441,17 +484,19 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 - Quizzes, in video quizzes and peer assessment projects
 - Run monthly after initial rollout
 - All content open source
+- Toolbox, R Programming and Getting and Cleaning Data have all run
+(enrollments of 64k, 62, 34k resp)
 
 --- 
 ## Platform choices
-> - Everything done on Coursera
-> - All programming in R
-> - All lecture notes done in Slidify (common theme)
-> - All content open source
-> - Version control through git and github
-> - (Students will learn and use git)
-> - RStudio as an IDE
-> - knitr for reproducible documents and report writing
+- Everything done on Coursera
+- All programming in R
+- All lecture notes done in Slidify (common theme)
+- All content open source
+- Version control through git and github
+- (Students will learn and use git)
+- RStudio as an IDE
+- knitr for reproducible documents and report writing
 
 ---  &twocol w1:50% w2:50%
 ## Standard and non-standard stat content 
@@ -468,7 +513,7 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 *** =right
 - Reproducible research, report generation
 - Presentations
-- Interactive graphics (rgl, rCharts, shiny, manipulate)
+- Interactive graphics (rCharts, shiny, manipulate, googleVis)
 - Data munging, obtaining data
 - Programming
 - Plotting (ggplot2, rCharts, R base graphics)
@@ -476,8 +521,23 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 
 
 ---
-<br>
-<br>
+## Shiny is pretty neat
+
+<div align=center>
+<img src="../fig/shiny01.png" alt="Drawing" style="height: 300px;"/>
+</div>
+* [Shiny example John Muschelli's app](https://muschellij2.shinyapps.io/ENAR_2014/)
+* [Rawan Allozi's algorithm](http://spark.rstudio.com/bcaffo/pta/)
+* Rstudio is giving free hosted shiny apps for students in the concentration!
+
+---
+## Cost comparison with other programs
+<div align="center">
+<img src = "../fig/dscompare.png">
+</div>
+
+
+---
 <br>
 <div align="center">
 <img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
@@ -544,7 +604,7 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 <img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
 </div>
 
+
 ---
 Thanks!
-=========
 

@@ -1,4 +1,6 @@
 base
+ggplot2
+googleVis
 knitr
 rCharts
 reshape2
