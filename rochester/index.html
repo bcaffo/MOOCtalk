@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teaching statistics for the future</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Teaching statistics for the future">
+  <meta name="author" content="Brian Caffo">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="../libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="../libraries/widgets/nvd3/css/rNVD3.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="../libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="../libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="../libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="../libraries/widgets/nvd3/js/fisheye.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/bloomberg_shield.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Teaching statistics for the future</h1>
+    <h2>The MOOC revolution and beyond</h2>
+    <p>Brian Caffo<br/>Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Teaching statistics for the future</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Outline of the talk</h3>
+
+<ol>
+<li>What I supposedly do during the day</li>
+<li>A brief taxonomy and history of online educational models</li>
+<li>Massive Open Online Courses (MOOCs) </li>
+<li>JHU Biostat involvement in Coursera</li>
+<li>Novel moving target directions of the field statistics</li>
+<li><strong>Data Science series</strong> </li>
+<li>SWIRL</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <article data-timings="">
+    <p><a href="https://github.com/bcaffo/MOOCtalk"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a></p>
+
+<h2>About these slides</h2>
+
+<ul>
+<li>HTML5 using (customized) <a href="https://code.google.com/p/io-2012-slides/">Google io2012 style</a></li>
+<li>Created using <a href="http://slidify.org">slidify</a></li>
+<li>Appear on github at (<a href="https://github.com/bcaffo/MOOCtalk">https://github.com/bcaffo/MOOCtalk</a>) fork if you&#39;d like</li>
+<li>Jointly written with my collaborators Jeff Leek and Roger Peng</li>
+<li>CC licensed by-nc-sa</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Core team</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src="../fig/brianCaffo.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/jeffLeek.jpeg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/rogerPeng.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+<div align="center">
+<img src="../fig/nickyC.jpg" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/seanKross.png" alt="Drawing" style="height: 200px;"/>
+<img src="../fig/iraGooding.jpeg" alt="Drawing" style="height: 200px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Plus generous contributions from the</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li><a href="http://www.biostat.jhsph.edu">Department of Biostatistics</a></li>
+<li><a href="http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/">Center for Teaching and Learning</a></li>
+<li><a href="http://www.jhsph.edu">Bloomberg School of Public Health</a></li>
+<li><a href="http://www.jhu.edu">Johns Hopkins University</a></li>
+<li><a href="http://coursera.org">Coursera</a></li>
+<li>Steve, Mike, Karen, Sukon</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Multimedia </li>
+<li>Team SWIRL</li>
+<li>Lauren and Ethan (Brian&#39;s 2013 interns)</li>
+<li>Contributions from github pull requests</li>
+<li>Tolerant families!</li>
+<li>800 thousand intrepid self learners</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>What I supposedly do during the day</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>SMART (<a href="http://www.smart-stats.org">www.smart-stats.org</a>)</h3>
+
+<div align="center">
+<img src="../fig/smart.png" alt="Drawing" style="width: 500px;"/>
+<img src="../fig/defaultMode2.png" alt="Drawing" style="width: 400px;"/></div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>(Incomplete) characteristics of educational systems</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Online / in person / blended</li>
+<li>Active/participatory/interactive learning</li>
+<li>Scalable / non-scalable</li>
+<li>Low cost / high cost / freemium</li>
+<li>Student paced / teacher paced</li>
+<li>Open / restricted access</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Flipped / lecture style / blended </li>
+<li>Open / closed source content</li>
+<li>Instructor interaction</li>
+<li>Credentialing </li>
+<li>Funding model</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Examples</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Traditional in person teaching generally has characterists of: in person, lecture style, non-scalable, high cost, restricted access with a large amount of instructor interaction valued credentialing</li>
+<li>&quot;Tranditional&quot; online courses are online or blended online and in person and otherwise try to approximate traditional in person classes. </li>
+<li>Online interactive learning (OIL Code School, Code academy) primary characteristics are student-paced interactive learning</li>
+<li>Intelligent tutoring systems (swirl), like OILs just not necessarily online</li>
+<li>Khan Academy is online, interactive, scalable and low cost</li>
+<li>Other modalities : iTunes U, OpenCourseware, Udemy</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>MOOCs</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Primary characteristics are open access, low cost, scalable, online </p>
+
+<h3>(every letter is negotiable, from Wikipedia citing Mathieu Plorde)</h3>
+
+<div align="center">
+<a href=http://www.flickr.com/photos/23311795@N04/8620174342>
+<img src="../fig/MOOC_poster_mathplourde.jpg" alt="Drawing" style="width: 600px;"/>
+</a>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Most visible MOOC instruction sites</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href=https://www.edx.org/>
+<img src="../fig/edX.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udacity.com/>
+<img src="../fig/udacity.png" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://www.udemy.com/>
+<img src="../fig/udemy.jpeg" alt="Drawing" style="height: 100px;"/>
+</a>
+<a href=https://corsera.rog/>
+<img src="../fig/coursera.png" alt="Drawing" style="height: 300;"/>
+</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Also</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Several university/organization-specific sites, platforms and content delivery systems</h3>
+
+<ul>
+<li>Stanford, CMU, Duke, Harvard, MIT, google ...</li>
+<li>Varying degrees of content/delivery</li>
+<li>EdX platform has been open sourced</li>
+<li>Google course builder (now contributing to EdX)</li>
+<li>Massive amount of development going into platforms and instruction sites/portals</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, videos</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformVideos.png" alt="Drawing" style="height: 200;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, quizzes</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformQuizzes.png" alt="Drawing" style="height: 300;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, peer grading</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/platformPeerGrading.png" alt="Drawing" style="height: 250;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Coursera platform, forums</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>You&#39;re on the internets</h3>
+
+<p>(Forums can be brutal)</p>
+
+<div align=center>
+<img src="../fig/platformForums.png" alt="Drawing" style="height: 400px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Johns Hopkins Biostat Coursera classes</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Original three</h3>
+
+<ul>
+<li>Brian Caffo, Roger Peng, Jeff Leek</li>
+<li>Run 09/2012, 09/2012, 01/2013
+<div align=center>
+<img src="../fig/bootcamp_B-02.jpg" alt="Drawing"/>
+<img src="../fig/computing_B-02.jpg" alt="Drawing"/>
+<img src="../fig/data_B-02.jpg" alt="Drawing"/>
+</div></li>
+</ul>
+
+<h2>Since then</h2>
+
+<ul>
+<li>Scott Zeger introduced class <em>Cased Based Introduction to Statistics</em></li>
+<li>Brian introducted <em>MBBC2</em></li>
+<li>Martin Lindquist introduced <em>Statistical Analysis of fMRI Data</em></li>
+<li>John McGready introduced <em>Statistical Reasoning for Public Health</em></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Enrollments by class and offering</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Statements of accomplishment by offering</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Over time</h2>
+  </hgroup>
+  <article data-timings="">
+    <!-- MotionChart generated in R 3.0.3 by googleVis 0.5.2 package -->
+
+<!-- Wed May 14 21:06:15 2014 -->
+
+<!-- jsHeader -->
+
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID6b421f83741 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "MBBC1",
+new Date(2012,8,24),
+16398,
+749,
+1,
+0 
+],
+[
+ "MBBC2",
+new Date(2013,8,30),
+10965,
+508,
+1,
+0 
+],
+[
+ "CDA",
+new Date(2012,8,24),
+50883,
+3938,
+1,
+0 
+],
+[
+ "DA",
+new Date(2013,0,22),
+101747,
+4254,
+1,
+0 
+],
+[
+ "Case",
+new Date(2013,6,22),
+19631,
+2712,
+1,
+0 
+],
+[
+ "StatReas",
+new Date(2014,0,21),
+26063,
+1068,
+1,
+0 
+],
+[
+ "fMRI",
+new Date(2014,1,24),
+23947,
+1682,
+1,
+0 
+],
+[
+ "Tools",
+new Date(2014,3,7),
+64515,
+6467,
+1,
+1 
+],
+[
+ "Rprog",
+new Date(2014,3,7),
+62433,
+2965,
+1,
+1 
+],
+[
+ "Clean",
+new Date(2014,3,7),
+33737,
+781,
+1,
+1 
+],
+[
+ "MBBC1",
+new Date(2013,3,16),
+22153,
+1427,
+2,
+0 
+],
+[
+ "MBBC2",
+new Date(2014,0,6),
+6742,
+291,
+2,
+0 
+],
+[
+ "CDA",
+new Date(2013,0,2),
+44661,
+6271,
+2,
+0 
+],
+[
+ "DA",
+new Date(2013,9,28),
+91379,
+2246,
+2,
+0 
+],
+[
+ "MBBC1",
+new Date(2013,6,29),
+18270,
+1109,
+3,
+0 
+],
+[
+ "CDA",
+new Date(2013,8,23),
+83441,
+6768,
+3,
+0 
+],
+[
+ "MBBC1",
+new Date(2013,10,18),
+18270,
+408,
+4,
+0 
+],
+[
+ "CDA",
+new Date(2014,0,6),
+65002,
+4092,
+4,
+0 
+],
+[
+ "MBBC1",
+new Date(2014,2,3),
+16454,
+196,
+5,
+0 
+] 
+];
+data.addColumn('string','class');
+data.addColumn('date','date');
+data.addColumn('number','enrollment');
+data.addColumn('number','soa');
+data.addColumn('number','offering');
+data.addColumn('number','ds');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID6b421f83741() {
+var data = gvisDataMotionChartID6b421f83741();
+var options = {};
+options["width"] =    600;
+options["height"] =    400;
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID6b421f83741')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID6b421f83741);
+})();
+function displayChartMotionChartID6b421f83741() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+
+<!-- jsChart -->  
+
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID6b421f83741"></script>
+ 
+
+<!-- divChart -->
+
+<div id="MotionChartID6b421f83741"
+  style="width: 600px; height: 400px;">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Over time, MBBC 1</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Completion rates</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Students participate in MOOCs for a variety of reasons</li>
+<li>Numerous students sign up for a course, but do not 
+actively participate</li>
+<li>Recent MBBC 1
+
+<ul>
+<li>17K students</li>
+<li>10K accessed the course site ever</li>
+<li>7K watched any video ever</li>
+<li>2K submitted any quiz</li>
+<li>196 earned a SOA</li>
+<li>129 signature track</li>
+<li>128 posted to the forums</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Some summary statistics</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Classes considered are MBBC1, MBBC2, CDA, DA, Case, StatReas, fMRI, Tools, Rprog, Clean</li>
+<li>A total of 776,691 students enrolled<br></li>
+<li><p>19 class offerings</p></li>
+<li><p>Average of 40,878 students per class</p></li>
+<li><p>Minimum class size of 6,742 for class
+MBBC2 offering 2</p></li>
+<li><p>Maximum class size of 101,747 for class
+DA offering 1</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Signature track</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 100px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 100px;"/>
+</div>
+
+<ul>
+<li>Verification based on typing patterns (highly unique according to Coursera)
+
+<ul>
+<li>Secondary verification via webcams</li>
+</ul></li>
+<li>Coursera gives student aid</li>
+<li>Revenue distribution via agreement between Coursera and partner institution</li>
+<li>155 signature track for 20k students in MBBC1 V4</li>
+<li>Much higher retention and completion rates for signature track</li>
+<li>Between 1% and 12% Signature track rate for classes (depending on a variety of factors)</li>
+<li>All of our classes are $49 for sig track</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Interesting fallout from doing this</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3>Positive things</h3>
+
+<ul>
+<li>Jeff&#39;s class was listed as one of the top 10 most enrolled Coursera classes
+
+<ul>
+<li>Roger&#39;s class has since eclipsed it in cumulative enrollment</li>
+</ul></li>
+<li>Brian, Roger, Martin, John have run signature track ($49 per student)</li>
+<li>Brian&#39;s class featured on the front page of the Washington Post </li>
+<li>Roger interviewed on Anderson Cooper and NPR</li>
+<li>Increase in PhD applications, many citing the Coursera efforts</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3>Negative things</h3>
+
+<ul>
+<li>Lots of complaining on the forums</li>
+<li>Uprisings</li>
+<li>Negative reviews (internal and external)</li>
+<li>Complaints</li>
+<li>No internal mechanisms for support</li>
+<li>Fatigue</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>MOOCs by university</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>
+
+<hr>
+
+<h2>Case studies</h2>
+
+<div align="center">
+<img src="../fig/email1.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Case studies</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src="../fig/email2.png" alt="Drawing" style="height: 175px;"/>
+</div>
+
+<p><br></p>
+
+<div align="center">
+<a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
+<img src="../fig/JL.PNG" alt="Drawing" style="height: 175px;"/>
+</a>
+<a href = "https://twitter.com/ahalterman/status/425805189380308992">
+    <img src="../fig/jl2.png" alt="Drawing" style="height: 250px;"/>
+</a>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h3>Statistics, big data, data science / cost of training the workforce</h3>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 200px;"/>
+</div>
+
+<p><br><br></p>
+
+<div align=center>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 200px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Johhs Hopkins Data Science Specialization</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo</h3>
+
+<div align=center>
+<img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Courses</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Specialization certificate</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align=center>
+<img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Unique aspects of the program</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Completely redesigned stat curriculum</li>
+<li>9 signature track courses</li>
+<li>1 capstone project course</li>
+<li>Total cost (modular) $490
+
+<ul>
+<li>$49 per sig track for 10 classes</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Each class is four weeks</li>
+<li>Quizzes, in video quizzes and peer assessment projects</li>
+<li>Run monthly after initial rollout</li>
+<li>All content open source</li>
+<li>Toolbox, R Programming and Getting and Cleaning Data have all run
+(enrollments of 64k, 62, 34k resp)</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Platform choices</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Everything done on Coursera</li>
+<li>All programming in R</li>
+<li>All lecture notes done in Slidify (common theme)</li>
+<li>All content open source</li>
+<li>Version control through git and github</li>
+<li>(Students will learn and use git)</li>
+<li>RStudio as an IDE</li>
+<li>knitr for reproducible documents and report writing</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Standard and non-standard stat content</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Basic probability and math stat</li>
+<li>Statistical inference
+
+<ul>
+<li>Hypothesis tests, confidence intervals, likelihood</li>
+<li>Brief intro to Bayesian analysis</li>
+</ul></li>
+<li>Regression and generalized linear models</li>
+<li>Statistical machine learning</li>
+<li>EDA</li>
+<li>Data analysis</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Reproducible research, report generation</li>
+<li>Presentations</li>
+<li>Data cleaning, obtaining data</li>
+<li>R Programming</li>
+<li>Plotting, interactive graphics </li>
+<li>Shiny, yhat</li>
+</ul>
+
+<p><a href="https://muschellij2.shinyapps.io/ENAR_2014/">Shiny example John Muschelli&#39;s app</a></p>
+
+<p><a href="http://spark.rstudio.com/bcaffo/pta/">Rawan Allozi&#39;s algorithm</a></p>
+
+<p>Rstudio is giving free hosted shiny apps for students in the concentration!</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Cost comparison with other programs</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/dscompare.png" style="height: 400px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>swirlstats.com</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>A friendlier way to learn R...</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 11.58.39.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Self-paced and interactive</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.02.43.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Learn R and stats, together</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.06.28.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>swirl + Coursera</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.16.23.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>Get Coursera credit, automatically</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.17.26.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>Make your own interactive content</h2>
+  </hgroup>
+  <article data-timings="">
+    <div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h1>Thanks!</h1>
+  </hgroup>
+  <article data-timings="">
+    <p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
+    </div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Teaching statistics for the future'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title=''>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Core team'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plus generous contributions from the'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='What I supposedly do during the day'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='(Incomplete) characteristics of educational systems'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Examples'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='MOOCs'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Most visible MOOC instruction sites'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Also'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Coursera platform, videos'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Coursera platform, quizzes'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Coursera platform, peer grading'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Coursera platform, forums'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Johns Hopkins Biostat Coursera classes'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Enrollments by class and offering'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Statements of accomplishment by offering'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Over time'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Over time, MBBC 1'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Completion rates'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Some summary statistics'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Signature track'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Interesting fallout from doing this'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='MOOCs by university'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Case studies'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Statistics, big data, data science / cost of training the workforce'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Johhs Hopkins Data Science Specialization'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Courses'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Specialization certificate'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Unique aspects of the program'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Platform choices'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Standard and non-standard stat content'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Cost comparison with other programs'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='swirlstats.com'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='A friendlier way to learn R...'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Self-paced and interactive'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Learn R and stats, together'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='swirl + Coursera'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Get Coursera credit, automatically'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Make your own interactive content'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Thanks!'>
+         41
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="../libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="../libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
