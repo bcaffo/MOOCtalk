@@ -1,0 +1,297 @@
+---
+title       : Teaching statistics for the future
+subtitle    : The MOOC revolution and beyond
+author      : Brian Caffo
+job         : Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health
+logo        : bloomberg_shield.png
+framework   : io2012
+highlighter : highlight.js  
+hitheme     : tomorrow       
+url:
+    lib: ../libraries
+    assets: ../assets
+widgets     : [mathjax, quiz, bootstrap]
+mode        : selfcontained # {standalone, draft}
+ext_widgets : {rCharts: [libraries/nvd3]}
+---
+
+## JHU Biostat onsite degree programs
+
+<img src="../fig/header-prospective-students.jpg" alt="Drawing" style="width: 250px;"/>
+
+1. PhD program 
+  - Around 50 students with around 10 matriculating per year.
+  - Around 200 applications per year.
+2. ScM program
+  - Around 25 students with around 10 matriculating per year.
+  - Around 50 applications per year. 
+3. Concurrent MHS program
+  - Typically around 10 students with around 2 matriculating per year.
+  - 2 - 4 applications per year 
+4. Standalone MHS program
+
+---
+## Enrollments by class and offering
+```{r, echo = FALSE, results = 'asis'}
+require(rCharts)
+myData <- data.frame(
+  enrollment = c(
+    16398, 22153, 18270, 18270, #MBBC1
+    10965,  6742,     0,     0, #MBBC2
+    50883, 44661, 83441, 65002, #CDA
+    101747, 91379,  0, 0, #DA
+    19631, 0, 0, 0), #Case based 
+  date = c(
+    "9/24/12", "4/16/13", "7/29/13", "11/18/13", 
+    "9/30/13", "1/6/14", NA, NA,
+    "9/24/12", "1/2/13", "9/23/13", "1/6/14",
+    "1/22/13", "10/28/13", NA, NA,
+    "7/22/13", NA, NA, NA),
+  soa = c(
+     749, 1427, 1109,  408,
+     508,  291,    0,    0,
+    3938, 6271, 6768, 4092, 
+    4254, 2246,    0,    0, 
+    2712,    0,    0,    0
+    ),    
+  class = c(
+    rep("MBBC1", 4), 
+    rep("MBBC2", 4), 
+    rep("CDA", 4),
+    rep("DA", 4),
+    rep("Case", 4)
+  ),
+  offering = rep(1 : 4, 5)
+)
+
+myData <- myData[order(myData$offering),]
+n1 <- nPlot(enrollment ~ class, group = "offering", data = myData, type = "multiBarChart")
+n1$save('../fig/classPlot2.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot2.html" width=100%, height=600></iframe>')
+```
+
+---
+## Statements of accomplishment by offering
+```{r, echo = FALSE, results = 'asis'}
+n2 <- nPlot(soa ~ class, group = "offering", data = myData, type = "multiBarChart")
+n2$save('../fig/classPlot3.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot3.html" width=100%, height=600 ></iframe>')
+```
+
+---
+## Over time, MBBC 1
+```{r, echo = FALSE, results = 'asis'}
+temp <- myData[myData$class == "MBBC1",]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp$date <- format(temp$date, "%Y-%m-%d")
+temp$soa10 <- temp$soa * 10
+m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
+m1$set(pointSize = 10, lineWidth = 5)
+m1$save('../fig/classPlot5.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot5.html" width=100%, height=600></iframe>')
+```
+
+---
+## Over time CDA
+```{r, echo = FALSE, results = 'asis'}
+temp <- myData[myData$class == "CDA",]
+temp$date <- as.Date(temp$date, format = "%m/%d/%y")
+temp$date <- format(temp$date, "%Y-%m-%d")
+temp$soa10 <- temp$soa * 10
+m1 <- mPlot(x = "date", y = c("enrollment", "soa10"), type =  "Line", data = temp)
+m1$set(pointSize = 10, lineWidth = 5)
+m1$save('../fig/classPlot4.html', cdn = TRUE)
+cat('<iframe src="../fig/classPlot4.html" width=100%, height=600></iframe>')
+```
+
+---
+## Important consideration about completion rates
+* Students participate in MOOCs for a variety of reasons
+* Numerous students sign up for a course, but do not 
+actively participate
+* Current (ongoing) MBBC 1
+  * 1% of enrolled students have taken any quiz whatsoever
+  * 25% of enrolled students have watched any video content
+
+--- 
+## Some summary statistics
+* Classes considered are `r unique(myData$class)`
+* A total of `r prettyNum(sum(myData$enrollment), big.mark=',', scientific = FALSE)` students enrolled  
+* `r  sum(myData$enrollment != 0)` class offerings
+```{r, echo = FALSE, results = 'hide'}
+e <- myData$enrollment
+avg <- sum(e) / sum(e != 0 )
+noZero <- myData[e != 0,]
+noZero <- noZero[order(noZero$enrollment),]
+minE <- noZero$enrollment[1]
+minEC <- noZero$class[1]
+minES <- noZero$offering[1]
+n <- nrow(noZero)
+maxE <- noZero$enrollment[n]
+maxEC <- noZero$class[n]
+maxES <- noZero$offering[n]
+``` 
+ * Average of `r prettyNum(avg, big.mark = ',', scientific = FALSE)` students per class.
+* Minimum class size of `r prettyNum(minE, big.mark = ',', scientific = FALSE)` for class
+`r minEC` offering `r minES`
+* Maximum class size of `r prettyNum(maxE, big.mark = ',', scienfific = FALSE)` for class
+`r maxEC` offering `r maxES`.
+
+
+
+---
+## Statistics, big data, data science
+
+<div align=center>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Complimentary problems
+<div align=center>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+---
+## Johhs Hopkins Data Science Specialization
+### Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo
+
+<div align=center>
+<img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Courses
+
+<div align=center>
+<img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+---
+## Specialization certificate
+
+<div align=center>
+<img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+--- &twocol w1:50% w2:50%
+## Unique aspects of the program
+*** =left
+- Completely redesigned stat curriculum
+- 9 signature track courses
+- 1 capstone project course
+- Total cost (modular) $490
+  - $49 per sig track for 10 classes
+
+*** =right
+- Each class is four weeks
+- Quizzes, in video quizzes and peer assessment projects
+- Run monthly after initial rollout
+- All content open source
+
+--- 
+## Platform choices
+> - Everything done on Coursera
+> - All programming in R
+> - All lecture notes done in Slidify (common theme)
+> - All content open source
+> - Version control through git and github
+> - (Students will learn and use git)
+> - RStudio as an IDE
+> - knitr for reproducible documents and report writing
+
+---  &twocol w1:50% w2:50%
+## Standard and non-standard stat content 
+*** =left
+- Basic probability and math stat
+- Statistical inference
+  - Hypothesis tests, confidence intervals, likelihood
+  - Brief intro to Bayesian analysis
+- Regression and generalized linear models
+- Statistical machine learning
+- EDA
+- Data analysis
+
+*** =right
+- Reproducible research, report generation
+- Presentations
+- Interactive graphics (rgl, rCharts, shiny, manipulate)
+- Data munging, obtaining data
+- Programming
+- Plotting (ggplot2, rCharts, R base graphics)
+- Capstone project
+
+
+---
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
+</div>
+
+---
+## A friendlier way to learn R...
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 11.58.39.png" style="height: 500px;"/>
+</div>
+
+---
+## Self-paced and interactive
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.02.43.png" style="height: 500px;"/>
+</div>
+
+---
+## Learn R and stats, together
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.06.28.png" style="height: 500px;"/>
+</div>
+
+---
+## swirl + Coursera
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.16.23.png" style="height: 500px;"/>
+</div>
+
+---
+## Get Coursera credit, automatically
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.17.26.png" style="height: 500px;"/>
+</div>
+
+---
+## Make your own interactive content
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
+</div>
+
+---
+## swirlstats.com
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
+</div>
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
+</div>
+
+---
+Thanks!
+=========
+
