@@ -1,4 +1,4 @@
-Teaching statistics for the future: the MOOC revolution and beyond
+  Teaching statistics for the future: the MOOC revolution and beyond
 ========================================================
 author: Brian Caffo, PhD
 date: 09/20/2014
@@ -168,19 +168,242 @@ Johns Hopkins Biostat Coursera classes
 
 End of course enrollments
 ===
+![plot of chunk unnamed-chunk-1](index-figure/unnamed-chunk-1.png) 
 
 
+End of course SOA
+===
+![plot of chunk unnamed-chunk-2](index-figure/unnamed-chunk-2.png) 
+
+Log10 enrollment over session, non DSS
+===
+![plot of chunk unnamed-chunk-3](index-figure/unnamed-chunk-3.png) 
+
+Log10 enrollment over session DSS
+===
+![plot of chunk unnamed-chunk-4](index-figure/unnamed-chunk-4.png) 
+
+Percent SOA over sessions non-DSS
+===
+![plot of chunk unnamed-chunk-5](index-figure/unnamed-chunk-5.png) 
+
+Percent SOA over session DSS
+===
+![plot of chunk unnamed-chunk-6](index-figure/unnamed-chunk-6.png) 
+
+Important consideration about completion rates
+===
+* Students participate in MOOCs for a variety of reasons
+* Numerous students sign up for a course, but do not 
+actively participate
+* Recent MBBC 1
+  * 17K students
+  * 10K accessed the course site ever
+  * 7K watched any video ever
+  * 2K submitted any quiz
+  * 196 earned a SOA
+  * 129 signature track ($6k in gross revenue)
+  * 128 posted to the forums
+
+Some summary statistics
+===
+* A total of 1,656,654 enrollments 
+* A total of 92,812 SOAs issued
+* 16 Unique classes
+* 56 class offerings
+* Average of 29,583 students per class.
+* Minimum class size of 6,139 
+* Maximum class size of 101,747
 
 
+Signature track
+===
+<div align="center">
+<img src="../fig/sigTrack.jpeg" alt="Drawing" style="height: 150px;"/>
+<img src="../fig/verified.png" alt="Drawing" style="height: 150px;"/>
+</div>
+
+- Verification based on typing patterns (highly unique according to Coursera)
+  - Secondary verification via webcams
+- Coursera gives student aid
+- Revenue distribution via agreement between Coursera and partner institution
+- Much higher retention and completion rates for signature track
 
 
+Case studies
+===
+
+<div align="center">
+<img src="../fig/email1.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+Case studies
+===
+
+<div align="center">
+<img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
+</div>
 
 
+Case studies
+===
+<div align="center">
+<a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
+<img src="../fig/JL.PNG" alt="Drawing" style="height: 200px;"/>
+</a>
+<a href = "https://twitter.com/ahalterman/status/425805189380308992">
+    <img src="../fig/jl2.png" alt="Drawing" style="height: 300px;"/>
+</a>
+</div>
+
+Statistics, big data, data science
+===
+
+<div align=center>
+<img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+Complimentary problems
+===
+<div align=center>
+<img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
+</div>
+
+Johhs Hopkins Data Science Specialization
+===
+### Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo
+
+<div align=center>
+<img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+Courses
+===
+
+<div align=center>
+<img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+Specialization certificate
+===
+
+<div align=center>
+<img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
+</div>
+
+Program format
+===
+- 9 signature track courses
+- 1 capstone project course
+- Total cost (modular) $490
+  - $49 per sig track for 10 classes
+
+***
+- Each class is four weeks
+- Quizzes, in video quizzes and peer assessment projects
+- Run monthly after initial rollout
+- All content open source
+
+Platform choices
+===
+- Everything done on Coursera
+- All programming in R
+- All lecture notes done in Slidify (common theme)
+- Version control through git and github
+  - **All content open source**
+  - (Students will learn and use git)
+  - All code and data available in slides
+- RStudio as an IDE
+- knitr for reproducible documents and report writing
+
+Standard and non-standard stat content 
+===
+- Basic probability and math stat
+- Statistical inference
+- Regression and generalized linear models
+- Statistical machine learning
+- EDA
+- Machine learning
+- Training wheel data analysis
+
+*** 
+- Reproducible research, report generation
+- Presentations
+- Interactive graphics 
+- Data munging, obtaining data
+- Plotting software
+- Capstone project
+- Actual data analysis
+
+ 
+===
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/swirl.png" style="height: 300px;"/>
+</div>
+
+A friendlier way to learn R...
+===
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 11.58.39.png" style="height: 500px;"/>
+</div>
+
+Self-paced and interactive
+===
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.02.43.png" style="height: 500px;"/>
+</div>
+
+Learn R and stats, together
+===
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.06.28.png" style="height: 500px;"/>
+</div>
+
+swirl + Coursera
+===
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.16.23.png" style="height: 500px;"/>
+</div>
 
 
+Get Coursera credit, automatically
+===
 
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.17.26.png" style="height: 500px;"/>
+</div>
 
+Make your own interactive content
+===
 
-```
-Error in file(file, "rt") : cannot open the connection
-```
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-01 23.52.07.png" style="height: 500px;"/>
+</div>
+
+swirlstats.com
+===
+
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 13.05.12.png" style="height: 500px;"/>
+</div>
+
+ 
+====
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+<img src = "../fig/swirl/Screenshot 2014-05-08 12.03.35.png" style="height: 200px;"/>
+</div>
+
