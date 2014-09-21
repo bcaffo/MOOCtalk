@@ -422,15 +422,15 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 <img src="../fig/email1.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
----
-## Case studies
+Case studies
+===
 
 <div align="center">
 <img src="../fig/email2.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
----
-## Case studies
+Case studies
+===
 
 <div align="center">
 <a href = "http://www.fastcompany.com/3029295/bottom-line/why-the-worlds-largest-mooc-says-it-can-help-you-get-ahead-in-the-new-economy">
@@ -441,51 +441,49 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 </a>
 </div>
 
----
-## Statistics, big data, data science
-
+Statistics, big data, data science
+===
 <div align=center>
 <img src="../fig/shortage.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
----
-## Complimentary problems
+Complimentary problems
+===
 <div align=center>
 <img src="../fig/incomesTuition.png" alt="Drawing" style="height: 300px;"/>
 </div>
 
----
-## Johhs Hopkins Data Science Specialization
+Johhs Hopkins Data Science Specialization
+===
 ### Codirected and taught by Roger Peng, Jeff Leek and Brian Caffo
 
 <div align=center>
 <img src="../fig/dataScience.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
----
-## Courses
+Courses
+===
 
 <div align=center>
 <img src="../fig/courses.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
----
-## Specialization certificate
+Specialization certificate
+===
 
 <div align=center>
 <img src="../fig/specilizationCertificate.png" alt="Drawing" style="height: 500px;"/>
 </div>
 
---- &twocol w1:50% w2:50%
-## Unique aspects of the program
-*** =left
+Program format
+===
 - Completely redesigned stat curriculum
 - 9 signature track courses
 - 1 capstone project course
 - Total cost (modular) $490
   - $49 per sig track for 10 classes
 
-*** =right
+***
 - Each class is four weeks
 - Quizzes, in video quizzes and peer assessment projects
 - Run monthly after initial rollout
@@ -493,30 +491,27 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 - Toolbox, R Programming and Getting and Cleaning Data have all run
 (enrollments of 64k, 62, 34k resp)
 
---- 
-## Platform choices
+Platform choices
+===
 - Everything done on Coursera
 - All programming in R
 - All lecture notes done in Slidify (common theme)
 - All content open source
 - Version control through git and github
-- (Students will learn and use git)
+  - (Students will learn and use git)
 - RStudio as an IDE
 - knitr for reproducible documents and report writing
 
----  &twocol w1:50% w2:50%
-## Standard and non-standard stat content 
-*** =left
+Standard and non-standard stat content 
+===
 - Basic probability and math stat
 - Statistical inference
-  - Hypothesis tests, confidence intervals, likelihood
-  - Brief intro to Bayesian analysis
 - Regression and generalized linear models
 - Statistical machine learning
 - EDA
 - Data analysis
 
-*** =right
+***
 - Reproducible research, report generation
 - Presentations
 - Interactive graphics (rCharts, shiny, manipulate, googleVis)
@@ -526,8 +521,8 @@ cat('<iframe src="../fig/classPlot6.html" width=100%, height=600 ></iframe>')
 - Capstone project
 
 
----
-## Shiny is pretty neat
+See the student shiny apps
+===
 
 <div align=center>
 <img src="../fig/shiny01.png" alt="Drawing" style="height: 300px;"/>
